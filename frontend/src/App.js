@@ -1,15 +1,22 @@
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-       
-       <h1>Hej världen!</h1>
-      
-      </header>
-    </div>
-  );
+import Home from "./components/home/Home";
+
+import "./App.css";
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
