@@ -1,5 +1,5 @@
 import React from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -8,12 +8,12 @@ const Landing = () => {
         <div>
           <h1>Startpage</h1>
           <p>Lorem Ipsum text</p>
-          {/*  <div>
+          {/*    <div>
             <Link to="/register">Register</Link>
-          </div>
+          </div> */}
           <div>
             <Link to="/login">Login</Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
