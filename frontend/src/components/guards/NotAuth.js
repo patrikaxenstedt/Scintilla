@@ -10,7 +10,7 @@ const IsAuth = ({ component: Component, auth, ...rest }) => (
       auth.isAuthenticated === false ? (
         <Component {...props} />
       ) : (
-        <Redirect to="/dashboard" />
+        <Redirect to="/content" />
       )
     }
   />
