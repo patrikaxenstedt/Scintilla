@@ -14,25 +14,19 @@ class Content extends Component {
 
     return (
       <div>
-        <nav>
+        {isAuthenticated ? (
           <div>
-            <div>
-              {isAuthenticated ? (
-                <div>
-                  <p>
-                    Welcome! <b>{user.name}</b>
-                  </p>
+            <p>
+              Welcome! <b>{user.name}</b>
+            </p>
 
-                  <a onClick={this.onLogout.bind(this)} href="/logout">
-                    Logout
-                  </a>
-                </div>
-              ) : (
-                <div></div>
-              )}
-            </div>
+            <a onClick={this.onLogout.bind(this)} href="/logout">
+              Logout
+            </a>
           </div>
-        </nav>
+        ) : (
+          <div></div>
+        )}
       </div>
     );
   }
