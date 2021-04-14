@@ -1,20 +1,20 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
+const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 // const passport = require("passport");
-const validator = require('validator');
-const isEmpty = require('../../utils/isEmpty');
-const key = require('../../config/keys');
+const validator = require("validator");
+const isEmpty = require("../../utils/isEmpty");
+const key = require("../../config/keys");
 
 // bring in user model
-require('../../models/User');
-const User = mongoose.model('users');
+require("../../models/User");
+const User = mongoose.model("users");
 
 // POST | api/auth/register
 // register process
-router.post('/register', (req, res, next) => {
+router.post("/register", (req, res, next) => {
   const { errors, isValid } = validateRegister(req.body);
 
   // Register validation
@@ -22,33 +22,33 @@ router.post('/register', (req, res, next) => {
     let errors = {};
 
     // Make empty fields into empty strings for validator
-    data.name = !isEmpty(data.name) ? data.name : '';
-    data.email = !isEmpty(data.email) ? data.email : '';
-    data.password = !isEmpty(data.password) ? data.password : '';
-    data.password2 = !isEmpty(data.password2) ? data.password2 : '';
+    data.name = !isEmpty(data.name) ? data.name : "";
+    data.email = !isEmpty(data.email) ? data.email : "";
+    data.password = !isEmpty(data.password) ? data.password : "";
+    data.password2 = !isEmpty(data.password2) ? data.password2 : "";
 
     // Check the name
     if (validator.isEmpty(data.name)) {
-      errors.name = 'name is required';
+      errors.name = "name is required";
     }
 
     // Check the email
     if (validator.isEmpty(data.email)) {
-      errors.email = 'email is required';
+      errors.email = "email is required";
     }
     if (!validator.isEmail(data.email)) {
-      errors.email = 'email is not valid';
+      errors.email = "email is not valid";
     }
 
     // Check the password
     if (validator.isEmpty(data.password)) {
-      errors.password = 'password is required';
+      errors.password = "password is required";
     }
     if (validator.isEmpty(data.password2)) {
-      errors.password2 = 'confirm password is required';
+      errors.password2 = "confirm password is required";
     }
     if (!validator.equals(data.password, data.password2)) {
-      errors.password2 = 'confirm password did not match';
+      errors.password2 = "confirm password did not match";
     }
     return {
       errors,
@@ -62,7 +62,7 @@ router.post('/register', (req, res, next) => {
     User.findOne({ email: req.body.email })
       .then((user) => {
         if (user) {
-          errors.email = 'Email already exists';
+          errors.email = "Email already exists";
           return res.status(400).json(errors);
         } else {
           const newUser = new User({
@@ -73,16 +73,16 @@ router.post('/register', (req, res, next) => {
           bcrypt.genSalt(10, (err, salt) => {
             bcrypt.hash(newUser.password, salt, (err, hash) => {
               if (err) {
-                res.json({ success: false, msg: 'Failed to register user' });
+                res.json({ success: false, msg: "Failed to register user" });
               } else {
                 newUser.password = hash;
                 newUser
                   .save()
                   .then((user) => {
-                    res.json({ success: true, msg: 'User registered' });
+                    res.json({ success: true, msg: "User registered" });
                   })
                   .catch((ex) => {
-                    return res.status(500).send('Something went wrong');
+                    return res.status(500).send("Something went wrong");
                   });
               }
             });
@@ -90,14 +90,14 @@ router.post('/register', (req, res, next) => {
         }
       })
       .catch((ex) => {
-        return res.status(500).send('Something went wrong');
+        return res.status(500).send("Something went wrong");
       });
   }
 });
 
 // POST | api/auth/login
 // Login process
-router.post('/login', (req, res, next) => {
+router.post("/login", (req, res, next) => {
   const { errors, isValid } = validateLogin(req.body);
 
   // Login validation
@@ -105,13 +105,13 @@ router.post('/login', (req, res, next) => {
     let errors = {};
 
     if (validator.isEmpty(data.email)) {
-      errors.email = 'email is required';
+      errors.email = "email is required";
     }
     if (!validator.isEmail(data.email)) {
-      errors.email = 'email is not valid';
+      errors.email = "email is not valid";
     }
     if (validator.isEmpty(data.password)) {
-      errors.password = 'password is required';
+      errors.password = "password is required";
     }
     return {
       errors,
@@ -129,7 +129,7 @@ router.post('/login', (req, res, next) => {
       .then((user) => {
         // Check for user
         if (!user) {
-          errors.email = 'User does not exist';
+          errors.email = "User does not exist";
           return res.status(400).json(errors);
         } else {
           // Check the password
@@ -152,22 +152,22 @@ router.post('/login', (req, res, next) => {
                   (err, token) => {
                     res.json({
                       success: true,
-                      token: 'JWT ' + token,
+                      token: "JWT " + token,
                     });
                   }
                 );
               } else {
-                errors.password = 'Password incorrect';
+                errors.password = "Password incorrect";
                 return res.status(400).json(errors);
               }
             })
             .catch((ex) => {
-              return res.status(500).send('Something went wrong');
+              return res.status(500).send("Something went wrong");
             });
         }
       })
       .catch((ex) => {
-        return res.status(500).send('Something went wrong');
+        return res.status(500).send("Something went wrong");
       });
   }
 });

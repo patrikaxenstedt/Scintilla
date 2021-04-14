@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { registerUser } from "../../actions/authActions";
-import classnames from "classnames";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { registerUser } from '../../actions/authActions';
+import classnames from 'classnames';
 
 class Register extends Component {
   state = {
-    name: "",
-    email: "",
-    password: "",
-    password2: "",
+    name: '',
+    email: '',
+    password: '',
+    password2: '',
     errors: {},
   };
 
@@ -54,8 +54,8 @@ class Register extends Component {
                       type="text"
                       name="name"
                       placeholder="Your name"
-                      className={classnames("form-control", {
-                        "is-invalid": errors.name,
+                      className={classnames('form-control', {
+                        'is-invalid': errors.name,
                       })}
                       value={name}
                       onChange={this.onChange}
@@ -70,8 +70,8 @@ class Register extends Component {
                       type="text"
                       name="email"
                       placeholder="Your email"
-                      className={classnames("form-control", {
-                        "is-invalid": errors.email,
+                      className={classnames('form-control', {
+                        'is-invalid': errors.email,
                       })}
                       value={email}
                       onChange={this.onChange}
@@ -86,8 +86,8 @@ class Register extends Component {
                       type="password"
                       name="password"
                       placeholder="Your password"
-                      className={classnames("form-control", {
-                        "is-invalid": errors.password,
+                      className={classnames('form-control', {
+                        'is-invalid': errors.password,
                       })}
                       value={password}
                       onChange={this.onChange}
@@ -102,8 +102,8 @@ class Register extends Component {
                       type="password"
                       name="password2"
                       placeholder="Confirm password"
-                      className={classnames("form-control", {
-                        "is-invalid": errors.password2,
+                      className={classnames('form-control', {
+                        'is-invalid': errors.password2,
                       })}
                       value={password2}
                       onChange={this.onChange}
@@ -132,7 +132,7 @@ class Register extends Component {
                 </form>
               </div>
             </div>
-            <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+            <div className="col s12" style={{ paddingLeft: '11.250px' }}>
               <Link
                 to="/"
                 className="btn btn-medium waves-effect waves-light hoverable grey accent-3"
