@@ -45,7 +45,7 @@ export const loginUser = (userData, history) => (dispatch) => {
       const decoded = jwt_decode(token);
       //   set current user
       dispatch(setCurrentUser(decoded));
-      // redirect user
+      // redirect user to this route if successfully login
       history.push("/content");
       // clear errors
       dispatch({

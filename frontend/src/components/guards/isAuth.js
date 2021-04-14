@@ -10,7 +10,8 @@ const IsAuth = ({ component: Component, auth, ...rest }) => (
       auth.isAuthenticated === true ? (
         <Component {...props} />
       ) : (
-        <Redirect to="/login" />
+        // redirect the user to this route when not auth/logged out
+        <Redirect to="/" />
       )
     }
   />
