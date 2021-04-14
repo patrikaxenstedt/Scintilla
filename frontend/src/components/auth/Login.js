@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { loginUser } from "../../actions/authActions";
-import classnames from "classnames";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { loginUser } from '../../actions/authActions';
+import classnames from 'classnames';
 
 class Login extends Component {
   state = {
-    email: "",
-    password: "",
+    email: '',
+    password: '',
     errors: {},
   };
 
@@ -50,8 +50,8 @@ class Login extends Component {
                       type="text"
                       name="email"
                       placeholder="Your email"
-                      className={classnames("form-control", {
-                        "is-invalid": errors.email,
+                      className={classnames('form-control', {
+                        'is-invalid': errors.email,
                       })}
                       value={email}
                       onChange={this.onChange}
@@ -64,8 +64,8 @@ class Login extends Component {
                       type="password"
                       name="password"
                       placeholder="Your password"
-                      className={classnames("form-control", {
-                        "is-invalid": errors.password,
+                      className={classnames('form-control', {
+                        'is-invalid': errors.password,
                       })}
                       value={password}
                       onChange={this.onChange}
