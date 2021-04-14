@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import jwt_decode from "jwt-decode";
-import setAuthToken from "./utils/setAuthToken";
-import { setCurrentUser, logoutUser } from "./actions/authActions";
-import { Provider } from "react-redux";
-import store from "./store";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import jwt_decode from 'jwt-decode';
+import setAuthToken from './utils/setAuthToken';
+import { setCurrentUser, logoutUser } from './actions/authActions';
+import { Provider } from 'react-redux';
+import store from './store';
 
-import NotAuth from "./components/guards/NotAuth";
-import IsAuth from "./components/guards/isAuth";
+import NotAuth from './components/guards/NotAuth';
+import IsAuth from './components/guards/isAuth';
 
-import Home from "./components/home/Home";
-import Login from "./components/auth/Login";
-import Register from "./components/auth/Register";
-import Content from "./components/content/content";
+import Home from './components/home/Home';
+import Login from './components/auth/Login';
+import Register from './components/auth/Register';
+import Content from './components/content/content';
 
-import "./App.css";
+import './App.css';
 
 // TOKEN CHECKER
 // Checks the local storage if there's a token, and if it still valid
