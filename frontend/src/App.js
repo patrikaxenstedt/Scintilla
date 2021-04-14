@@ -7,10 +7,12 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import NotAuth from "./components/guards/NotAuth";
+import IsAuth from "./components/guards/isAuth";
 
 import Home from "./components/home/Home";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
+import Content from "./components/content/content";
 
 import "./App.css";
 
@@ -42,6 +44,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <NotAuth exact path="/login" component={Login} />
               <NotAuth exact path="/register" component={Register} />
+              <IsAuth exact path="/content" component={Content} />
             </Switch>
           </div>
         </Router>
