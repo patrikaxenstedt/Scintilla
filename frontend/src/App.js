@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
-import jwt_decode from "jwt-decode";
 import { Provider } from "react-redux";
 import store from "./store";
 
@@ -10,8 +10,10 @@ import NotAuth from "./components/guards/NotAuth";
 
 import Home from "./components/home/Home";
 import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
 
 import "./App.css";
+
 // TOKEN CHECKER
 // Checks the local storage if there's a token, and if it still valid
 if (localStorage.jwtToken) {
@@ -39,6 +41,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <NotAuth exact path="/login" component={Login} />
+              <NotAuth exact path="/register" component={Register} />
             </Switch>
           </div>
         </Router>
