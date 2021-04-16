@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
+import Banner from '../Banner';
+import Hero from '../Hero';
 
 class Content extends Component {
   onLogout(e) {
@@ -15,15 +17,17 @@ class Content extends Component {
     return (
       <div>
         {isAuthenticated ? (
-          <div>
-            <p>
-              Welcome! <b>{user.name}</b>
-            </p>
+          <Hero>
+            <Banner title="Prototyp" subtitle="Lorem ipsum">
+              <p>
+                Welcome! <b>{user.name}</b>
+              </p>
 
-            <a onClick={this.onLogout.bind(this)} href="/logout">
-              Logout
-            </a>
-          </div>
+              <a onClick={this.onLogout.bind(this)} href="/logout">
+                Logout
+              </a>
+            </Banner>
+          </Hero>
         ) : (
           <div></div>
         )}
