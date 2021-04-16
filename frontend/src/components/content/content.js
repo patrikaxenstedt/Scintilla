@@ -21,9 +21,9 @@ class Content extends Component {
         <>
           <Hero>
             <Banner title="Hi,Hello,Welcome" subtitle={user.name}>
-              <a onClick={this.onLogout.bind(this)} href="/logout">
+              <button onClick={this.onLogout.bind(this)} href="/logout">
                 Logout
-              </a>
+              </button>
             </Banner>
           </Hero>
           <Bouncing />
