@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
 import Banner from '../Banner';
 import Hero from '../Hero';
+import Services from '../Services';
 
 class Content extends Component {
   onLogout(e) {
@@ -13,16 +15,29 @@ class Content extends Component {
 
   render() {
     const { isAuthenticated, user } = this.props.auth;
+    if (isAuthenticated) {
+      return (
+        <>
+          <Hero>
+            <Banner title="Welcome" subtitle={user.name}>
+              <a onClick={this.onLogout.bind(this)} href="/logout">
+                Logout
+              </a>
+            </Banner>
+          </Hero>
+          <Services />
+        </>
+      );
+    }
 
-    return (
-      <div>
+    /*     return (
+      <>
         {isAuthenticated ? (
           <Hero>
-            <Banner title="Prototyp" subtitle="Lorem ipsum">
+            <Banner title="Någon text här" subtitle="Bla bla bla">
               <p>
                 Welcome! <b>{user.name}</b>
               </p>
-
               <a onClick={this.onLogout.bind(this)} href="/logout">
                 Logout
               </a>
@@ -31,8 +46,9 @@ class Content extends Component {
         ) : (
           <div></div>
         )}
-      </div>
-    );
+      </>
+
+    ); */
   }
 }
 
