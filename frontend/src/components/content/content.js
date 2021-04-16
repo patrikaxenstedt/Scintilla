@@ -6,6 +6,7 @@ import { logoutUser } from '../../actions/authActions';
 import Banner from '../Banner';
 import Hero from '../Hero';
 import Services from '../Services';
+import Bouncing from '../Bouncing';
 
 class Content extends Component {
   onLogout(e) {
@@ -19,25 +20,13 @@ class Content extends Component {
       return (
         <>
           <Hero>
-            <Banner title="Welcome" subtitle={user.name}>
+            <Banner title="Hi,Hello,Welcome" subtitle={user.name}>
               <a onClick={this.onLogout.bind(this)} href="/logout">
                 Logout
               </a>
             </Banner>
           </Hero>
-          <div className="center-svg">
-            <svg
-              class="scroll-down"
-              fill="#fff"
-              height="75"
-              viewBox="0 0 24 24"
-              width="75"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
-              <path d="M0-.75h24v24H0z" fill="none" />
-            </svg>
-          </div>
+          <Bouncing />
           <Services />
         </>
       );
