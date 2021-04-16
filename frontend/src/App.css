@@ -59,7 +59,7 @@ h6 {
 .roomsHero {
   min-height: calc(100vh - 66px);
   /* background: url('./assets/cabin1.jpeg') center/cover no-repeat; */
-  background-color: var(--offWhite);
+  background-color: var(--mainBlack);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,4 +124,30 @@ h6 {
 .services p {
   width: 80%;
   margin: 0 auto;
+}
+
+.scroll-down {
+  margin: -6rem auto;
+
+  position: relative;
+  top: 90%;
+
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.center-svg {
+  display: flex;
+  justify-content: center;
 }
