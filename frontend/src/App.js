@@ -14,6 +14,7 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Content from './views/content';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -49,6 +50,7 @@ class App extends Component {
               <IsAuth exact path="/content" component={Content} />
             </Switch>
           </div>
+          <Footer />
         </Router>
       </Provider>
     );
