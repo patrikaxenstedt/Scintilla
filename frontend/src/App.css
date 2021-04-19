@@ -6,7 +6,7 @@
 
 /* Colors here */
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #313131;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -54,12 +54,19 @@ h6 {
   font-weight: bold;
   margin-bottom: 1.5em;
 }
+
+a {
+  color: var(--mainWhite);
+}
+a:hover {
+  color: var(--mainGrey);
+}
 /* Styling for hero */
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
   /* background: url('./assets/cabin1.jpeg') center/cover no-repeat; */
-  background-color: var(--mainBlack);
+  background-color: var(--primaryColor);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,4 +226,38 @@ h6 {
     margin: 0 1rem;
     padding: 0.5rem 0;
   }
+}
+
+/* Footer */
+.infos {
+  padding: 5rem 0;
+}
+.infos {
+  color: var(--mainWhite);
+  background: var(--primaryColor);
+  text-align: center;
+}
+.infos-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+.info span {
+  display: inline-block;
+  color: var(--mainWhite);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.infos h6 {
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+}
+.infos p {
+  color: var(--mainWhite);
+  font-size: 0.8rem;
+  width: 80%;
+  margin: 0 auto;
 }
