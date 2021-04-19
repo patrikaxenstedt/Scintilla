@@ -15,6 +15,7 @@ import Register from './components/auth/Register';
 import Content from './views/content';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import NotFound from './views/NotFound';
 
 import './App.css';
 
@@ -48,6 +49,7 @@ class App extends Component {
               <NotAuth exact path="/login" component={Login} />
               <NotAuth exact path="/register" component={Register} />
               <IsAuth exact path="/content" component={Content} />
+              <Route component={NotFound} />
             </Switch>
           </div>
           <Footer />
