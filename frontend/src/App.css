@@ -174,7 +174,7 @@ h6 {
 }
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--mainBlack);
 }
 .nav-links {
   height: 0;
@@ -194,7 +194,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: var(--mainGrey);
 }
 
 .show-nav {

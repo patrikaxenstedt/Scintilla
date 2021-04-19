@@ -14,7 +14,7 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-            <Link to="/">
+            <Link to="/content">
               {/* <img src={logo} alt="Logotype" /> */}
               Logo here
             </Link>
@@ -30,10 +30,10 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/content">Home</Link>
             </li>
             <li>
-              <Link to="/">View rooms</Link>
+              <Link to="/content">View rooms</Link>
             </li>
           </ul>
         </div>
