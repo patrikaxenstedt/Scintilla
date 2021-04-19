@@ -12,7 +12,7 @@ import IsAuth from './components/guards/isAuth';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Content from './components/content/content';
+import Content from './views/content';
 
 import './App.css';
 

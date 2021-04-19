@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { logoutUser } from '../../actions/authActions';
-import Banner from '../Banner';
-import Hero from '../Hero';
-import Services from '../Services';
-import Bouncing from '../Bouncing';
+import { logoutUser } from '../actions/authActions';
+import Banner from '../components/Banner';
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Bouncing from '../components/Bouncing';
 
 class Content extends Component {
   onLogout(e) {
