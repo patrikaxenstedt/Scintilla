@@ -65,7 +65,7 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  /* background-image: url('./images/room-2.jpeg'); */
+  /* background-image: url(''); */
   background-color: lightcoral;
   min-height: 60vh;
 }
@@ -126,12 +126,11 @@ h6 {
   margin: 0 auto;
 }
 
+/* Bouncing arrow */
 .scroll-down {
-  margin: -6rem auto;
-
+  margin: -4rem auto;
   position: relative;
   top: 90%;
-
   animation-name: bounce;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -147,6 +146,7 @@ h6 {
   }
 }
 
+/* Div for bouncing arrow */
 .center-svg {
   display: flex;
   justify-content: center;
@@ -199,4 +199,24 @@ h6 {
 
 .show-nav {
   height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    margin-left: 4rem;
+  }
+  .nav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
 }
