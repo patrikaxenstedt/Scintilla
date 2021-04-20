@@ -56,13 +56,9 @@ class Login extends Component {
             onChange={this.onChange}
           />
           {errors && <div className="error-email">{errors.email}</div>}
-
           <span className="login-span">Email</span>
-
           <br />
-
           <br />
-
           <div>
             <input
               type="password"
