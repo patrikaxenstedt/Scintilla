@@ -38,9 +38,12 @@ class Login extends Component {
 
     return (
       <div className="login">
-        <h2 className="active h2-login"> Sign in </h2>
-
-        <h2 className="nonactive h2-login"> Sign up </h2>
+        <Link to="/login">
+          <h2 class="active">Sign in</h2>
+        </Link>
+        <Link to="/register">
+          <h2 class="nonactive">Sign up</h2>
+        </Link>
         <form onSubmit={this.onSubmitHandler}>
           <input
             type="text"
@@ -52,7 +55,7 @@ class Login extends Component {
             value={email}
             onChange={this.onChange}
           />
-          {errors && <div>{errors.email}</div>}
+          {errors && <div className="error-email">{errors.email}</div>}
 
           <span className="login-span">Email</span>
 
@@ -71,7 +74,7 @@ class Login extends Component {
               value={password}
               onChange={this.onChange}
             />
-            {errors && <div>{errors.password}</div>}
+            {errors && <div className="error-password"></div>}
           </div>
           <span className="login-span">Password</span>
           <br />
@@ -82,10 +85,6 @@ class Login extends Component {
           >
             Sign In
           </button>
-          <span>
-            Not yet registered yet?
-            <Link to="/register"> Register now</Link>
-          </span>
         </form>
       </div>
     );

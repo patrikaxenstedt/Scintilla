@@ -30,9 +30,20 @@ h1 {
   line-height: 1;
   margin-bottom: 0.5em;
 }
+
 h2 {
-  font-size: 2em;
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: 100;
   margin-bottom: 0.75em;
+  padding-left: 12px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2:first-child {
+  padding-left: 0px;
 }
 h3 {
   font-size: 1.5em;
@@ -287,7 +298,7 @@ a:hover {
   width: 405px;
   margin: auto;
   padding: 60px 60px;
-  background: url(https://picsum.photos/id/1045/600/800) no-repeat center center;
+  background: url(https://picsum.photos/id/120/600/800) no-repeat center center;
   background-size: cover;
   box-shadow: 0px 30px 60px -5px #000;
 }
@@ -297,27 +308,17 @@ form {
 }
 
 .active {
-  border-bottom: 2px solid var(--darkGrey);
   color: var(--mainWhite);
+  border-bottom: 2px solid var(--darkGrey);
 }
 
 .nonactive {
   color: var(--darkGrey);
+  margin-left: 1rem;
 }
-
-.h2-login {
-  padding-left: 12px;
-  font-size: 22px;
-  margin-left: 20px;
-  text-transform: uppercase;
-  padding-bottom: 5px;
-  letter-spacing: 2px;
-  display: inline-block;
-  font-weight: 100;
-}
-
-.h2-login:first-child {
-  padding-left: 0px;
+.nonactive:hover {
+  color: var(--mainWhite);
+  border-bottom: 2px solid var(--darkGrey);
 }
 
 .login-span {
@@ -334,7 +335,7 @@ form {
 
 .text {
   border: none;
-  width: 89%;
+  width: 100%;
   padding: 10px 20px;
   display: block;
   height: 15px;
@@ -430,6 +431,18 @@ label {
 
 .signin:focus {
   outline: none;
+}
+
+.error-email {
+  color: var(--mainWhite);
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.error-password {
+  color: var(--mainWhite);
+  font-size: 0.8rem;
+  text-align: left;
 }
 
 hr {

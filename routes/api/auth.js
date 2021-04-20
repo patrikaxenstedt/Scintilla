@@ -29,26 +29,26 @@ router.post("/register", (req, res, next) => {
 
     // Check the name
     if (validator.isEmpty(data.name)) {
-      errors.name = "name is required";
+      errors.name = "Name is required";
     }
 
     // Check the email
     if (validator.isEmpty(data.email)) {
-      errors.email = "email is required";
+      errors.email = "Email is required";
     }
     if (!validator.isEmail(data.email)) {
-      errors.email = "email is not valid";
+      errors.email = "Email is not valid";
     }
 
     // Check the password
     if (validator.isEmpty(data.password)) {
-      errors.password = "password is required";
+      errors.password = "Password is required";
     }
     if (validator.isEmpty(data.password2)) {
-      errors.password2 = "confirm password is required";
+      errors.password2 = "Confirm password is required";
     }
     if (!validator.equals(data.password, data.password2)) {
-      errors.password2 = "confirm password did not match";
+      errors.password2 = "Confirm password did not match";
     }
     return {
       errors,
@@ -105,13 +105,13 @@ router.post("/login", (req, res, next) => {
     let errors = {};
 
     if (validator.isEmpty(data.email)) {
-      errors.email = "email is required";
+      errors.email = "Email is required";
     }
     if (!validator.isEmail(data.email)) {
-      errors.email = "email is not valid";
+      errors.email = "Email is not valid";
     }
     if (validator.isEmpty(data.password)) {
-      errors.password = "password is required";
+      errors.password = "Password is required";
     }
     return {
       errors,
