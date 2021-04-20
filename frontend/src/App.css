@@ -13,7 +13,7 @@
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainBlue: #47b6f7;
-  --offBlue: #4082f5;
+  --offBlue: #6ea2fc;
   --mainFocus: rgba(0, 0, 0, 0);
   --mainBorder: rgba(255, 255, 255, 0.5);
   --offBorder: rgba(255, 255, 255, 0.1);
@@ -77,6 +77,13 @@ a {
 }
 a:hover {
   color: var(--mainGrey);
+}
+/* Divider  */
+.clear {
+  margin: 1.25rem;
+}
+.clear-big {
+  margin: 2.5rem 0;
 }
 
 .login-a {
@@ -309,6 +316,20 @@ a:hover {
   box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
 }
 
+.register {
+  position: relative;
+  height: 38rem;
+  width: 25.3125rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 3.75rem 3.75rem;
+  background: url(https://picsum.photos/id/120/600/800) no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
+}
+
 form {
   padding-top: 5rem;
 }
@@ -316,11 +337,12 @@ form {
 .active {
   color: var(--mainWhite);
   border-bottom: 0.125rem solid var(--darkGrey);
+  margin: 0 1rem;
 }
 
 .nonactive {
   color: var(--darkGrey);
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 .nonactive:hover {
   color: var(--mainWhite);

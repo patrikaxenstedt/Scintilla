@@ -57,8 +57,7 @@ class Login extends Component {
           />
           {errors && <div className="error-email">{errors.email}</div>}
           <span className="login-span">Email</span>
-          <br />
-          <br />
+          <div className="clear-big"></div>
           <div>
             <input
               type="password"
@@ -73,7 +72,7 @@ class Login extends Component {
             {errors && <div className="error-password"></div>}
           </div>
           <span className="login-span">Password</span>
-          <br />
+          <div className="clear"></div>
 
           <button
             disabled={!(this.state.email && this.state.password)}
