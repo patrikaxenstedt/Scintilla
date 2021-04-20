@@ -13,7 +13,7 @@
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainBlue: #47b6f7;
-  --offBlue: #4082f5;
+  --offBlue: #6ea2fc;
   --mainFocus: rgba(0, 0, 0, 0);
   --mainBorder: rgba(255, 255, 255, 0.5);
   --offBorder: rgba(255, 255, 255, 0.1);
@@ -78,7 +78,10 @@ a {
 a:hover {
   color: var(--mainGrey);
 }
-
+/* Divider  */
+.clear {
+  margin: 1.25rem;
+}
 .clear-big {
   margin: 2.5rem 0;
 }
