@@ -37,55 +37,51 @@ class Login extends Component {
     const { email, password, errors } = this.state;
 
     return (
-      <div>
-        <div>
+      <div className="login">
+        <Link to="/login">
+          <h2 class="active">Sign in</h2>
+        </Link>
+        <Link to="/register">
+          <h2 class="nonactive">Sign up</h2>
+        </Link>
+        <form onSubmit={this.onSubmitHandler}>
+          <input
+            type="text"
+            name="email"
+            placeholder="Your email"
+            className={classnames('text', {
+              'is-invalid': errors.email,
+            })}
+            value={email}
+            onChange={this.onChange}
+          />
+          {errors && <div className="error-email">{errors.email}</div>}
+          <span className="login-span">Email</span>
+          <br />
+          <br />
           <div>
-            <div>
-              <div>Sign-in</div>
-              <div>
-                <form onSubmit={this.onSubmitHandler}>
-                  {/* Email */}
-                  <div>
-                    <input
-                      type="text"
-                      name="email"
-                      placeholder="Your email"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.email,
-                      })}
-                      value={email}
-                      onChange={this.onChange}
-                    />
-                    {errors && <div>{errors.email}</div>}
-                  </div>
-                  {/* password */}
-                  <div>
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Your password"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.password,
-                      })}
-                      value={password}
-                      onChange={this.onChange}
-                    />
-                    {errors && <div>{errors.password}</div>}
-                  </div>
-                  <button disabled={!(this.state.email && this.state.password)}>
-                    Sign-in
-                  </button>
-                  <span>
-                    Not yet registered yet?
-                    <Link to="/register"> Register now</Link>
-                  </span>
-                </form>
-              </div>
-            </div>
-
-            <Link to="/">Go back</Link>
+            <input
+              type="password"
+              name="password"
+              placeholder="Your password"
+              className={classnames('text', {
+                'is-invalid': errors.password,
+              })}
+              value={password}
+              onChange={this.onChange}
+            />
+            {errors && <div className="error-password"></div>}
           </div>
-        </div>
+          <span className="login-span">Password</span>
+          <br />
+
+          <button
+            disabled={!(this.state.email && this.state.password)}
+            className="signin"
+          >
+            Sign In
+          </button>
+        </form>
       </div>
     );
   }

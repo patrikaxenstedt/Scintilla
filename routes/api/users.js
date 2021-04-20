@@ -74,7 +74,7 @@ router.get(
 // UPDATE user NEW
 router.post("/update/:id", function (req, res) {
   User.findById(req.params.id, function (err, user) {
-    if (!user) res.status(404).send("data is not found");
+    if (!user) res.status(404).send("Data is not found");
     else {
       user.name = req.body.name;
       user.email = req.body.email;
@@ -83,10 +83,10 @@ router.post("/update/:id", function (req, res) {
       user
         .save()
         .then((user) => {
-          res.json({ msg: "success" });
+          res.json({ msg: "Success" });
         })
         .catch((err) => {
-          res.json({ msg: "falied" });
+          res.json({ msg: "Falied" });
         });
     }
   });
@@ -102,7 +102,7 @@ router.post("/users/add", function (req, res) {
   user.save(function (err) {
     if (err) {
       console.log(err);
-      res.json({ msg: "failed" });
+      res.json({ msg: "Failed" });
     } else {
       res.json(user);
     }
@@ -116,7 +116,7 @@ router.post("/delete/:id", function (req, res) {
   User.findByIdAndDelete(query, function (err) {
     if (err) {
       console.log(err);
-      res.json({ msg: "failed" });
+      res.json({ msg: "Failed" });
       return;
     } else {
       res.json({ msg: "User deleted successfully." });
