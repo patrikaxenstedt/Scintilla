@@ -62,8 +62,7 @@ class Register extends Component {
           {errors && <div className="invalid-feedback">{errors.name}</div>}
 
           <span className="login-span">Name</span>
-          <br />
-          <br />
+          <div className="clear-big"></div>
           <div>
             <input
               type="text"
@@ -78,8 +77,7 @@ class Register extends Component {
             {errors && <div className="invalid-feedback">{errors.email}</div>}
           </div>
           <span className="login-span">Email</span>
-          <br />
-          <br />
+          <div className="clear-big"></div>
           <div>
             <input
               type="password"
@@ -96,8 +94,7 @@ class Register extends Component {
             )}
           </div>
           <span className="login-span">Password</span>
-          <br />
-          <br />
+          <div className="clear-big"></div>
           <div>
             <input
               type="password"

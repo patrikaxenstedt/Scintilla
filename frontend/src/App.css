@@ -79,6 +79,10 @@ a:hover {
   color: var(--mainGrey);
 }
 
+.clear-big {
+  margin: 2.5rem 0;
+}
+
 .login-a {
   color: var(--mainBlack);
 }
