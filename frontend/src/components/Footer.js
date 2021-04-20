@@ -25,7 +25,11 @@ export default class Footer extends Component {
         icon: <FaMap />,
         title: 'Find us',
         info: (
-          <a href="https://goo.gl/maps/uNUkGWUFaGcjqteVA" target="_blank">
+          <a
+            href="https://goo.gl/maps/uNUkGWUFaGcjqteVA"
+            target="_blank"
+            rel="noreferrer"
+          >
             We are here
           </a>
         ),
@@ -34,7 +38,7 @@ export default class Footer extends Component {
         icon: <FaInstagram />,
         title: 'Instagram',
         info: (
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
             Our Instagram
           </a>
         ),
@@ -44,7 +48,7 @@ export default class Footer extends Component {
         icon: <FaFacebook />,
         title: 'Facebook',
         info: (
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             Our Facebook
           </a>
         ),

@@ -19,20 +19,19 @@ import NotFound from './views/NotFound';
 
 import './App.css';
 
-// TOKEN CHECKER
 // Checks the local storage if there's a token, and if it still valid
 if (localStorage.jwtToken) {
-  // set auth token header auth
+  // Set auth token header auth
   setAuthToken(localStorage.jwtToken);
-  // decode token and get suer info and expiration
+  // Decode token and get user info and expiration
   const decoded = jwtDecode(localStorage.jwtToken);
-  // set user and isAuthenticated
+  // Set user and isAuthenticated
   store.dispatch(setCurrentUser(decoded));
 
-  // check for epired token
+  // Check for epired token
   const currentTime = Date.now() / 1000;
   if (decoded.exp < currentTime) {
-    // logout user
+    // Logout user
     store.dispatch(logoutUser());
   }
 }
@@ -51,8 +50,8 @@ class App extends Component {
               <IsAuth exact path="/content" component={Content} />
               <Route component={NotFound} />
             </Switch>
+            <Footer />
           </div>
-          <Footer />
         </Router>
       </Provider>
     );

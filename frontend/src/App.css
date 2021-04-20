@@ -61,6 +61,13 @@ a {
 a:hover {
   color: var(--mainGrey);
 }
+
+.login-a {
+  color: var(--mainBlack);
+}
+.login-a:hover {
+  color: var(--mainGrey);
+}
 /* Styling for hero */
 .defaultHero,
 .roomsHero {
@@ -83,7 +90,7 @@ a:hover {
   background: var(--mainWhite);
   color: var(--mainBlack);
   padding: 2rem 1rem;
-  border-radius: 4%;
+  border-radius: 20px;
   box-shadow: 0 8px 6px -6px var(--mainBlack);
   text-align: center;
   text-transform: capitalize;
@@ -236,6 +243,9 @@ a:hover {
   color: var(--mainWhite);
   background: var(--primaryColor);
   text-align: center;
+  /*  position: absolute;
+  bottom: 0;
+  width: 100%; */
 }
 .infos-center {
   width: 90vw;
