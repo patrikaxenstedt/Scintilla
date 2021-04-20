@@ -287,8 +287,7 @@ a:hover {
   width: 405px;
   margin: auto;
   padding: 60px 60px;
-  background: url(https://picsum.photos/id/1004/5616/3744) no-repeat center
-    center #505050;
+  background: url(https://picsum.photos/id/1045/600/800) no-repeat center center;
   background-size: cover;
   box-shadow: 0px 30px 60px -5px #000;
 }
@@ -306,9 +305,10 @@ form {
   color: var(--darkGrey);
 }
 
-h2 {
+.h2-login {
   padding-left: 12px;
   font-size: 22px;
+  margin-left: 20px;
   text-transform: uppercase;
   padding-bottom: 5px;
   letter-spacing: 2px;
@@ -316,7 +316,7 @@ h2 {
   font-weight: 100;
 }
 
-h2:first-child {
+.h2-login:first-child {
   padding-left: 0px;
 }
 
@@ -324,6 +324,7 @@ h2:first-child {
   color: var(--mainWhite);
   text-transform: uppercase;
   font-size: 12px;
+  margin-left: 20px;
   opacity: 0.4;
   display: inline-block;
   position: relative;
@@ -368,11 +369,11 @@ input {
   font-size: 14px;
 }
 
-h2,
+/* h2,
 span,
 .custom-checkbox {
   margin-left: 20px;
-}
+} */
 
 /* .custom-checkbox {
   -webkit-appearance: none;

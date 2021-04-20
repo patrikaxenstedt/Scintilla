@@ -37,10 +37,10 @@ class Login extends Component {
     const { email, password, errors } = this.state;
 
     return (
-      <div class="login">
-        <h2 class="active"> Sign in </h2>
+      <div className="login">
+        <h2 className="active h2-login"> Sign in </h2>
 
-        <h2 class="nonactive"> Sign up </h2>
+        <h2 className="nonactive h2-login"> Sign up </h2>
         <form onSubmit={this.onSubmitHandler}>
           <input
             type="text"
