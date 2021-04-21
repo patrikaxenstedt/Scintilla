@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logoutUser } from '../actions/authActions';
 import { FaAlignJustify } from 'react-icons/fa';
-import logo from '../assets/404-error.png';
+//import logo from '../assets/spacecat.png';
 
 class Navbar extends Component {
   state = {
@@ -28,7 +28,8 @@ class Navbar extends Component {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/content">
-              <img src={logo} alt="Logotype" />
+              {/* <img src={logo} alt="Logotype" /> */}
+              Logo
             </Link>
             <button
               type="button"
