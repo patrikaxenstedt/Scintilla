@@ -6,9 +6,12 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
   return (
     <Hero>
-      <Banner title="404" subtitle="Wups! Could not find the page..">
-        <Link to="/" className="nav-icon">
-          return home
+      <Banner
+        title="Page not found"
+        subtitle="We looked everywhere for this page. Are you sure the websites URL is correct?"
+      >
+        <Link to="/content" className="login-a">
+          <button className="signin"> Return home</button>
         </Link>
       </Banner>
     </Hero>
