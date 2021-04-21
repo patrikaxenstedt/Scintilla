@@ -27,7 +27,10 @@
 body {
   padding-top: 4.125rem;
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  /* background: var(--mainWhite); */
+  background: url(https://picsum.photos/id/1048/5616/3744) no-repeat center
+    center;
+  background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -96,8 +99,10 @@ a:hover {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 4.125rem);
-  /* background: url('./assets/cabin1.jpeg') center/cover no-repeat; */
-  background-color: var(--primaryColor);
+  background: url(https://picsum.photos/id/1048/5616/3744) no-repeat center
+    center;
+  background-size: cover;
+  /* background-color: var(--primaryColor); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,6 +116,7 @@ a:hover {
 /* Banner */
 .banner {
   display: inline-block;
+  max-width: 44rem;
   background: var(--mainWhite);
   color: var(--mainBlack);
   padding: 2rem 1rem;
@@ -130,7 +136,7 @@ a:hover {
   margin: 1.7rem auto;
 }
 .banner p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 

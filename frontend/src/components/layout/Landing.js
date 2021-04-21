@@ -9,29 +9,23 @@ const Landing = () => {
   return (
     <>
       <Hero>
-        <Banner title="HELLO!👋" subtitle="subtitle magic here">
+        <Banner
+          title="Lorem ipsum"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        >
           <Link to="/login" className="login-a">
-            Login
+            Sign in
           </Link>
           <Link to="/register" className="login-a">
-            Register
+            Sign up
           </Link>
         </Banner>
       </Hero>
       <Bouncing />
       <Services />
     </>
-    /*     <div>
-      <h1>Startpage</h1>
-      <p>Lorem Ipsum text</p>
-      <div>
-        <Link to="/register">Register</Link>
-      </div>
-
-      <div>
-        <Link to="/login">Login</Link>
-      </div>
-    </div> */
   );
 };
 
