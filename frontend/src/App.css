@@ -124,7 +124,7 @@ a:hover {
   border-radius: 1.25rem;
   box-shadow: 0 0.5rem 0.375rem -0.375rem var(--mainBlack);
   text-align: center;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: var(--mainSpacing);
 }
 .banner h1 {
