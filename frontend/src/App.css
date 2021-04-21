@@ -91,6 +91,7 @@ a:hover {
 
 .login-a {
   color: var(--mainBlack);
+  text-decoration: none;
 }
 .login-a:hover {
   color: var(--mainGrey);
@@ -318,7 +319,8 @@ a:hover {
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 3.75rem 3.75rem;
-  background: url(https://picsum.photos/id/120/600/800) no-repeat center center;
+  background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat
+    center center;
   background-size: cover;
   box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
 }
@@ -332,7 +334,8 @@ a:hover {
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 3.75rem 3.75rem;
-  background: url(https://picsum.photos/id/120/600/800) no-repeat center center;
+  background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat
+    center center;
   background-size: cover;
   box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
 }

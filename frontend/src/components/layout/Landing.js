@@ -16,10 +16,10 @@ const Landing = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         >
           <Link to="/login" className="login-a">
-            Sign in
+            <button className="signin">Sign in</button>
           </Link>
           <Link to="/register" className="login-a">
-            Sign up
+            <button className="signin"> Sign up</button>
           </Link>
         </Banner>
       </Hero>
