@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { logoutUser } from '../actions/authActions';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { logoutUser } from '../actions/authActions';
 import { FaAlignJustify } from 'react-icons/fa';
 import logo from '../assets/404-error.png';
+
 class Navbar extends Component {
   state = {
     isOpen: false,
   };
+
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
+
   onLogout(e) {
     e.preventDefault();
     this.props.logoutUser();
   }
+
   render() {
+    const { isAuthenticated } = this.props.auth;
+
     return (
       <nav className="navbar">
         <div className="nav-center">
@@ -32,21 +38,25 @@ class Navbar extends Component {
               <FaAlignJustify className="nav-icon" />
             </button>
           </div>
-          <ul
-            className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
-          >
-            <li>
-              <Link to="/content">Home</Link>
-            </li>
-            <li>
-              <Link to="/content">View page</Link>
-            </li>
-            <li>
-              <Link to="/logout" onClick={this.onLogout.bind(this)}>
-                Sign out
-              </Link>
-            </li>
-          </ul>
+          {isAuthenticated ? (
+            <ul
+              className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
+            >
+              <li>
+                <Link to="/content">Home</Link>
+              </li>
+              <li>
+                <Link to="/content">View page</Link>
+              </li>
+              <li>
+                <Link to="/logout" onClick={this.onLogout.bind(this)}>
+                  Sign out
+                </Link>
+              </li>
+            </ul>
+          ) : (
+            <div></div>
+          )}
         </div>
       </nav>
     );
