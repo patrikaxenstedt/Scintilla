@@ -18,6 +18,20 @@
   --mainBorder: rgba(255, 255, 255, 0.5);
   --offBorder: rgba(255, 255, 255, 0.1);
   --mainTextBorder: rgba(255, 255, 255, 0);
+
+  /* New colors, might use */
+  --mainOrange: #f79e6d;
+  --offOrange65: rgba(247, 158, 109, 0.65);
+  --offOrange50: rgba(247, 158, 109, 0.5);
+  --mainOrange20: rgb(255, 220, 202);
+  --mainSkin: #ffdcca;
+  --newBlack: #221e1f;
+  --fadeBlack: rgba(34, 30, 31, 0.9);
+  --fadeBlack75: rgba(34, 30, 31, 0.75);
+  --fadeBlack50: rgba(34, 30, 31, 0.5);
+  --mainCenter: #5a534c;
+
+  /* Extras */
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.1875rem;
   --lightShadow: 0.125rem 0.3125rem 0.1875rem 0 rgba(0, 0, 0, 0.5);
@@ -365,10 +379,20 @@ form {
   border-bottom: 0.125rem solid var(--darkGrey);
   margin: 0 1rem;
 }
+@media screen and (max-width: 425px) {
+  .active {
+    font-size: 1rem;
+  }
+}
 
 .nonactive {
   color: var(--darkGrey);
   margin: 0 1rem;
+}
+@media screen and (max-width: 425px) {
+  .nonactive {
+    font-size: 1rem;
+  }
 }
 .nonactive:hover {
   color: var(--mainWhite);

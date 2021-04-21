@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
-import { FaCar, FaShower, FaCoffee, FaWifi } from 'react-icons/fa';
+import { FaSpaceShuttle } from 'react-icons/fa';
 import Title from './Title';
 export default class Services extends Component {
   state = {
     services: [
       {
-        icon: <FaWifi />,
-        title: 'Free Wifi',
+        icon: <FaSpaceShuttle />,
+        title: 'Spaceship xx99x9',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
       {
-        icon: <FaCar />,
-        title: 'Free parking',
+        icon: <FaSpaceShuttle />,
+        title: 'Spaceship xx99x9',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
       {
-        icon: <FaShower />,
-        title: 'Showers',
+        icon: <FaSpaceShuttle />,
+        title: 'Spaceship xx99x9',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
       {
-        icon: <FaCoffee />,
-        title: 'Café',
+        icon: <FaSpaceShuttle />,
+        title: 'Spaceship xx99x9',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
