@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { logoutUser } from '../actions/authActions';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { logoutUser } from '../actions/authActions';
 import { FaAlignJustify } from 'react-icons/fa';
 import logo from '../assets/404-error.png';
+
 class Navbar extends Component {
   state = {
     isOpen: false,
   };
+
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
+
   onLogout(e) {
     e.preventDefault();
     this.props.logoutUser();
   }
+
   render() {
     const { isAuthenticated } = this.props.auth;
 
