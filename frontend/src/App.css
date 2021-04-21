@@ -324,6 +324,14 @@ a:hover {
   background-size: cover;
   box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
 }
+@media screen and (max-width: 425px) {
+  .login {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+}
 
 .register {
   position: relative;
@@ -338,6 +346,14 @@ a:hover {
     center center;
   background-size: cover;
   box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
+}
+@media screen and (max-width: 425px) {
+  .register {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
 }
 
 form {
