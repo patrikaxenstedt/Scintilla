@@ -8,6 +8,7 @@ import store from './store';
 
 import NotAuth from './components/guards/NotAuth';
 import IsAuth from './components/guards/isAuth';
+import IsAdmin from './components/guards/isAdmin';
 
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
@@ -16,6 +17,7 @@ import Content from './views/content';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NotFound from './views/NotFound';
+import AdminPage from './views/AdminPage';
 
 import './App.css';
 
@@ -48,6 +50,7 @@ class App extends Component {
               <NotAuth exact path="/login" component={Login} />
               <NotAuth exact path="/register" component={Register} />
               <IsAuth exact path="/content" component={Content} />
+              <IsAdmin exact path="/admindashboard" component={AdminPage} />
               <Route component={NotFound} />
             </Switch>
             <Footer />
