@@ -28,9 +28,9 @@
   --darkTwo: #1b1b1b;
   --darkThree: #242424;
   /* Font colors */
-  --mainFont: rgba(#fff, 0.96);
-  --mainFont67: rgba(#fff, 0.67);
-  --mainFont45: rgba(#fff, 0.45);
+  --mainFont: rgba(255, 255, 255, 0.96);
+  --mainFont67: rgba(255, 255, 255, 0.67);
+  --mainFont45: rgba(255, 255, 255, 0.45);
 
   /* Extras */
   --mainTransition: all 0.3s linear;
@@ -91,11 +91,11 @@ h6 {
 }
 
 a {
-  color: var(--mainDark);
+  color: var(--mainFont67);
   text-decoration: none;
 }
 a:hover {
-  color: var(--mainGrey);
+  color: var(--mainFont45);
 }
 /* Divider  */
 .clear {
@@ -135,7 +135,7 @@ a:hover {
   display: inline-block;
   max-width: 44rem;
   background: var(--darkTwo);
-  color: var(--darkGrey);
+  color: var(--mainFont67);
   padding: 2rem 1rem;
   border-radius: 1.25rem;
   box-shadow: 0 0.5rem 0.375rem -0.375rem var(--mainBlack);
@@ -144,7 +144,7 @@ a:hover {
   letter-spacing: var(--mainSpacing);
 }
 .banner h1 {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   font-size: 2.5rem;
 }
 .banner div {
@@ -163,7 +163,7 @@ a:hover {
   padding: 5rem 0;
 }
 .services {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   background: var(--darkTwo);
   text-align: center;
 }
@@ -183,12 +183,12 @@ a:hover {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
-  color: var(--mainWhite);
+  color: var(--mainFont);
 }
 .services p {
   width: 80%;
   margin: 0 auto;
-  color: var(--darkThree);
+  color: var(--mainFont67);
 }
 
 /* Bouncing arrow */
@@ -251,7 +251,7 @@ a:hover {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainWhite);
+  color: var(--mainFont);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
@@ -259,7 +259,7 @@ a:hover {
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--mainGrey);
+  color: var(--mainFont45);
 }
 
 .show-nav {
@@ -292,7 +292,7 @@ a:hover {
   padding: 5rem 0;
 }
 .infos {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   background: var(--darkThree);
   text-align: center;
 }
@@ -312,10 +312,10 @@ a:hover {
 }
 .infos h6 {
   letter-spacing: var(--mainSpacing);
-  color: var(--mainWhite);
+  color: var(--mainFont);
 }
 .infos p {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   font-size: 0.8rem;
   width: 80%;
   margin: 0 auto;
@@ -325,7 +325,7 @@ a:hover {
 .signin {
   background-color: var(--mainGrey);
   font-family: 'Montserrat', sans-serif;
-  color: var(--mainWhite);
+  color: var(--mainFont);
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
 }
@@ -381,7 +381,7 @@ form {
 }
 
 .active {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   border-bottom: 0.125rem solid var(--darkGrey);
   margin: 0 1rem;
 }
@@ -392,7 +392,7 @@ form {
 }
 
 .nonactive {
-  color: var(--darkGrey);
+  color: var(--mainFont67);
   margin: 0 1rem;
 }
 @media screen and (max-width: 425px) {
@@ -401,12 +401,12 @@ form {
   }
 }
 .nonactive:hover {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   border-bottom: 0.125rem solid var(--darkGrey);
 }
 
 .login-span {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   text-transform: uppercase;
   font-size: 0.75rem;
   margin-left: 1.25rem;
@@ -444,7 +444,7 @@ form {
 
 input[type='text'],
 input[type='password'] {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -462,7 +462,7 @@ label {
 
 .signin {
   background-color: var(--mainPurple);
-  color: var(--mainWhite);
+  color: var(--mainFont);
   width: 100%;
   padding: 0.625rem 1.25rem;
   display: block;
@@ -476,7 +476,7 @@ label {
 
 .signin:hover {
   background: var(--mainPink);
-  box-shadow: 0 0.25rem 2.1875rem -0.3125rem var(--offBlue);
+  box-shadow: 0 0.25rem 2.1875rem -0.3125rem var(--mainPurple);
   cursor: pointer;
 }
 
@@ -485,13 +485,13 @@ label {
 }
 
 .error-email {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   font-size: 0.8rem;
   text-align: left;
 }
 
 .error-password {
-  color: var(--mainWhite);
+  color: var(--mainFont);
   font-size: 0.8rem;
   text-align: left;
 }
