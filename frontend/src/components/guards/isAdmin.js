@@ -11,7 +11,7 @@ const IsAdmin = ({ component: Component, auth, ...rest }) => (
         auth.user.role === 'admin' ? (
           <Component {...props} />
         ) : (
-          <Redirect to="/admindashboard" />
+          <Redirect to="/content" />
         )
       ) : (
         <Redirect to="/login" />

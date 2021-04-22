@@ -6,25 +6,25 @@ export default class Services extends Component {
     services: [
       {
         icon: <FaSpaceShuttle />,
-        title: 'Spaceship xx99x9',
+        title: 'Spaceship xx99x1',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
       {
         icon: <FaSpaceShuttle />,
-        title: 'Spaceship xx99x9',
+        title: 'Spaceship xx99x2',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
       {
         icon: <FaSpaceShuttle />,
-        title: 'Spaceship xx99x9',
+        title: 'Spaceship xx99x3',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
       {
         icon: <FaSpaceShuttle />,
-        title: 'Spaceship xx99x9',
+        title: 'Spaceship xx99x4',
         info:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?',
       },
