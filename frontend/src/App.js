@@ -8,6 +8,7 @@ import store from './store';
 
 import NotAuth from './components/guards/NotAuth';
 import IsAuth from './components/guards/isAuth';
+import IsAdmin from './components/guards/isAdmin';
 
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
