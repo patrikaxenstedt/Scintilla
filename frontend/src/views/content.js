@@ -15,32 +15,12 @@ class Content extends Component {
       return (
         <>
           <Hero>
-            <Banner title="Hi,Hello,Welcome"></Banner>
+            <Banner title="Title, might remove this laster"></Banner>
           </Hero>
           <Bouncing />
         </>
       );
     }
-
-    /*     return (
-      <>
-        {isAuthenticated ? (
-          <Hero>
-            <Banner title="Någon text här" subtitle="Bla bla bla">
-              <p>
-                Welcome! <b>{user.name}</b>
-              </p>
-              <a onClick={this.onLogout.bind(this)} href="/logout">
-                Logout
-              </a>
-            </Banner>
-          </Hero>
-        ) : (
-          <div></div>
-        )}
-      </>
-
-    ); */
   }
 }
 
