@@ -20,17 +20,17 @@
   --mainTextBorder: rgba(255, 255, 255, 0);
 
   /* Main colors */
-  --mainPurple: #cecf66;
-  --mainPink: #edfd59;
+  --mainPurple: #8739f9;
+  --mainPink: #c651cd;
   --mainDark: #363636;
   /* Dark Colors*/
-  --darkOne: #cccccc;
-  --darkTwo: #ececec;
-  --darkThree: #ffffff;
+  --darkOne: #100f10;
+  --darkTwo: #1b1b1b;
+  --darkThree: #242424;
   /* Font colors */
-  --mainFont: #000;
-  --mainFont67: #000;
-  --mainFont45: #000;
+  --mainFont: rgba(255, 255, 255, 0.96);
+  --mainFont67: rgba(255, 255, 255, 0.67);
+  --mainFont45: rgba(255, 255, 255, 0.45);
 
   /* Extras */
   --mainTransition: all 0.3s linear;
