@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useReducer } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -21,7 +21,7 @@ class Navbar extends Component {
   }
 
   render() {
-    const { isAuthenticated } = this.props.auth;
+    const { isAuthenticated, user } = this.props.auth;
 
     return (
       <nav className="navbar">
@@ -43,6 +43,9 @@ class Navbar extends Component {
             <ul
               className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
             >
+              <li>
+                <Link>Welcome {user.name}!</Link>
+              </li>
               <li>
                 <Link to="/content">Home</Link>
               </li>

@@ -20,17 +20,17 @@
   --mainTextBorder: rgba(255, 255, 255, 0);
 
   /* Main colors */
-  --mainPurple: #8739f9;
-  --mainPink: #c651cd;
+  --mainPurple: #cecf66;
+  --mainPink: #edfd59;
   --mainDark: #363636;
   /* Dark Colors*/
-  --darkOne: #100f10;
-  --darkTwo: #1b1b1b;
-  --darkThree: #242424;
+  --darkOne: #cccccc;
+  --darkTwo: #ececec;
+  --darkThree: #ffffff;
   /* Font colors */
-  --mainFont: rgba(255, 255, 255, 0.96);
-  --mainFont67: rgba(255, 255, 255, 0.67);
-  --mainFont45: rgba(255, 255, 255, 0.45);
+  --mainFont: #000;
+  --mainFont67: #000;
+  --mainFont45: #000;
 
   /* Extras */
   --mainTransition: all 0.3s linear;
@@ -263,7 +263,7 @@ a:hover {
 }
 
 .show-nav {
-  height: 10.25rem;
+  height: 15.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -339,9 +339,10 @@ a:hover {
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 3.75rem 3.75rem;
-  background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat
-    center center;
-  background-size: cover;
+  background-color: rgb(153, 153, 153);
+  /*  background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat
+    center center; */
+  /*  background-size: cover; */
   box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
 }
 @media screen and (max-width: 425px) {
@@ -362,9 +363,10 @@ a:hover {
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 3.75rem 3.75rem;
-  background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat
+  background-color: rgb(153, 153, 153);
+  /*   background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat
     center center;
-  background-size: cover;
+  background-size: cover; */
   box-shadow: 0 1.875rem 3.75rem -0.3125rem var(--mainBlack);
 }
 @media screen and (max-width: 425px) {
