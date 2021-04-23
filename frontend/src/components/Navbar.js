@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useReducer } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -21,7 +21,7 @@ class Navbar extends Component {
   }
 
   render() {
-    const { isAuthenticated } = this.props.auth;
+    const { isAuthenticated, user } = this.props.auth;
 
     return (
       <nav className="navbar">
@@ -53,6 +53,7 @@ class Navbar extends Component {
                 <Link to="/logout" onClick={this.onLogout.bind(this)}>
                   Sign out
                 </Link>
+                <li>Hello {user.name}</li>
               </li>
             </ul>
           ) : (

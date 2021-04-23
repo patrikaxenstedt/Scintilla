@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { logoutUser } from '../actions/authActions';
 import Banner from '../components/Banner';
 import Hero from '../components/Hero';
-import Services from '../components/Services';
+
 import Bouncing from '../components/Bouncing';
 
 class Content extends Component {
@@ -27,7 +27,6 @@ class Content extends Component {
             </Banner>
           </Hero>
           <Bouncing />
-          <Services />
         </>
       );
     }
