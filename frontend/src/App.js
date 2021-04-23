@@ -18,6 +18,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NotFound from './views/NotFound';
 import AdminPage from './views/AdminPage';
+import Ships from './views/Ships';
 
 import './App.css';
 
@@ -50,6 +51,7 @@ class App extends Component {
               <NotAuth exact path="/login" component={Login} />
               <NotAuth exact path="/register" component={Register} />
               <IsAuth exact path="/content" component={Content} />
+              <IsAuth exact path="/ships" component={Ships} />
               <IsAdmin exact path="/admindashboard" component={AdminPage} />
               <Route component={NotFound} />
             </Switch>

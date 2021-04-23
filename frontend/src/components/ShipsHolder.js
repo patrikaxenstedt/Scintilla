@@ -1,20 +1,20 @@
 import React from 'react';
-import { withShipsConsumer } from '../context';
+import { withShipConsumer } from '../context';
 import Loading from './Loading';
 import ShipsFilter from './ShipsFilter';
 import ShipsList from './ShipsList';
 
-function ShipsHolder({ context }) {
+function ShipHolder({ context }) {
   const { loading, sortedShips, ships } = context;
   if (loading) {
     return <Loading />;
   }
   return (
     <>
-      <ShipsFilter rooms={rooms} />
-      <ShipsList rooms={sortedRooms} />
+      <ShipsFilter ships={ships} />
+      <ShipsList ships={sortedShips} />
     </>
   );
 }
 
-export default withShipsConsumer(ShipsHolder);
+export default withShipConsumer(ShipHolder);

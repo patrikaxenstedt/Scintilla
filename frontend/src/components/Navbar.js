@@ -50,7 +50,7 @@ class Navbar extends Component {
                 <Link to="/content">Home</Link>
               </li>
               <li>
-                <Link to="/content">View page</Link>
+                <Link to="/ships">View ships</Link>
               </li>
               <li>
                 <Link to="/logout" onClick={this.onLogout.bind(this)}>

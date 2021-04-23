@@ -1,4 +1,4 @@
-import img1 from './assets/mountain.jpg';
+import img1 from './assets/falcon-9.jpeg';
 
 const allShips = [
   {
