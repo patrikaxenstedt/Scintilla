@@ -44,6 +44,9 @@ class Navbar extends Component {
               className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
             >
               <li>
+                <Link>Welcome {user.name}!</Link>
+              </li>
+              <li>
                 <Link to="/content">Home</Link>
               </li>
               <li>
@@ -53,7 +56,6 @@ class Navbar extends Component {
                 <Link to="/logout" onClick={this.onLogout.bind(this)}>
                   Sign out
                 </Link>
-                <li>Hello {user.name}</li>
               </li>
             </ul>
           ) : (
