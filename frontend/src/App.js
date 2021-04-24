@@ -13,7 +13,7 @@ import IsAdmin from './components/guards/isAdmin';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Content from './views/content';
+import Content from './views/Content';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NotFound from './views/NotFound';
@@ -43,8 +43,8 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <Navbar />
           <div className="App">
+            <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
               <NotAuth exact path="/login" component={Login} />

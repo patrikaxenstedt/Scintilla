@@ -40,12 +40,12 @@
 }
 
 body {
-  padding-top: 4.125rem;
-  color: var(--mainBlack);
-  background: var(--darkThree);
-  /*   background: url(https://picsum.photos/id/681/5616/3315) no-repeat center
-    center; */
+  /*   pushed down body from navbar
+  padding-top: 4.125rem; */
+  background: url(https://www.spacex.com/static/images/backgrounds/rideshare_feature.webp)
+    no-repeat center center;
   background-size: cover;
+  color: var(--mainBlack);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -113,36 +113,43 @@ a:hover {
   color: var(--mainGrey);
 }
 /* Styling for hero */
-.defaultHero,
-.roomsHero {
-  min-height: calc(100vh - 4.125rem);
-  /*   background: url(https://picsum.photos/id/681/5616/3315) no-repeat center
-    center; */
+.defaultHero {
+  min-height: calc(100vh);
+  /* to push up navbar
+  min-height: calc(100vh - 4.125rem); */
+  background: url(https://www.spacex.com/static/images/backgrounds/rideshare_feature.webp)
+    no-repeat center center;
   background-size: cover;
-  background: var(--darkThree);
+  /* background: var(--darkThree); */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.roomsHero {
-  background-image: url('./assets/falcon-9.jpeg');
-  background-repeat: no-repeat;
+/* Styling for hero two */
+.defaultHeroTwo {
+  min-height: calc(100vh);
+  /* to push up navbar
+  min-height: calc(100vh - 4.125rem); */
+  background: url(https://www.spacex.com/static/images/backgrounds/fh_feature.webp)
+    no-repeat center center;
   background-size: cover;
-
-  min-height: 60vh;
+  /* background: var(--darkThree); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 /* End of Hero */
 /* Banner */
 .banner {
   display: inline-block;
-  max-width: 44rem;
-  background: var(--darkTwo);
   color: var(--mainFont67);
+  background: var(--darkTwo);
+  max-width: 44rem;
   padding: 2rem 1rem;
   border-radius: 1.25rem;
   box-shadow: 0 0.5rem 0.375rem -0.375rem var(--mainBlack);
   text-align: center;
-  /* text-transform: capitalize; */
   letter-spacing: var(--mainSpacing);
 }
 .banner h1 {
@@ -222,11 +229,11 @@ a:hover {
 /* Navbar */
 .navbar {
   position: fixed;
+  background: none;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: var(--darkTwo);
   z-index: 1;
 }
 .nav-header {
@@ -251,17 +258,17 @@ a:hover {
 }
 .nav-links a {
   display: block;
+  color: var(--mainFont);
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainFont);
   transition: var(--mainTransition);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--mainFont45);
+  text-decoration: underline;
 }
 
 .show-nav {
@@ -338,8 +345,8 @@ a:hover {
   width: 25.3125rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 22.4rem;
   padding: 3.75rem 3.75rem;
   background-color: rgb(153, 153, 153);
   /*  background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat
@@ -362,8 +369,8 @@ a:hover {
   width: 25.3125rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 17.4rem;
   padding: 3.75rem 3.75rem;
   background-color: rgb(153, 153, 153);
   /*   background: url(https://picsum.photos/id/352/600/800/?blur=10) no-repeat

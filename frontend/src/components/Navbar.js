@@ -44,7 +44,7 @@ class Navbar extends Component {
               className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
             >
               <li>
-                <Link>Welcome {user.name}!</Link>
+                <Link to="/content">Welcome {user.name}!</Link>
               </li>
               <li>
                 <Link to="/content">Home</Link>

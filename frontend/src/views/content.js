@@ -13,7 +13,7 @@ class Content extends Component {
       return (
         <>
           <Hero>
-            <Banner title="Title, might remove this laster"></Banner>
+            <Banner title="Title here"></Banner>
           </Hero>
         </>
       );
