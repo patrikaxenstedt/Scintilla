@@ -13,7 +13,7 @@ import IsAdmin from './components/guards/isAdmin';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Content from './views/Content';
+import Content from './views/content';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NotFound from './views/NotFound';
