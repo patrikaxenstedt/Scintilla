@@ -6,8 +6,6 @@ import { connect } from 'react-redux';
 import Banner from '../components/Banner';
 import Hero from '../components/Hero';
 
-import Bouncing from '../components/Bouncing';
-
 class Content extends Component {
   render() {
     const { isAuthenticated } = this.props.auth;
@@ -15,9 +13,8 @@ class Content extends Component {
       return (
         <>
           <Hero>
-            <Banner title="Title, might remove this laster"></Banner>
+            <Banner title="Title here"></Banner>
           </Hero>
-          <Bouncing />
         </>
       );
     }
