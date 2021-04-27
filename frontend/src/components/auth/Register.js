@@ -43,10 +43,10 @@ class Register extends Component {
     return (
       <div className="register">
         <Link to="/login">
-          <h2 class="nonactive">Sign in</h2>
+          <h2 className="nonactive">Sign in</h2>
         </Link>
         <Link to="/register">
-          <h2 class="active">Sign up</h2>
+          <h2 className="active">Sign up</h2>
         </Link>
         <form onSubmit={this.onSubmitHandler}>
           <input

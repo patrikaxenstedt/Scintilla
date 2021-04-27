@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
 
 const Hero = ({ title, subtitle, image }) => {

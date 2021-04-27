@@ -13,11 +13,14 @@ import IsAdmin from './components/guards/isAdmin';
 import Home from './pages/Home';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Content from './views/content';
 import Navbar from './components/Navbar';
 
 import NotFound from './views/NotFound';
 import AdminPage from './views/AdminPage';
+
+/* import SignInPage from '../src/pages/SignIn';
+import SignUpPage from '../src/pages/SignUp'; */
+import ContentPage from '../src/pages/Content';
 
 // Checks the local storage if there's a token, and if it still valid
 if (localStorage.jwtToken) {
@@ -47,7 +50,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <NotAuth exact path="/login" component={Login} />
               <NotAuth exact path="/register" component={Register} />
-              <IsAuth exact path="/content" component={Content} />
+              <IsAuth exact path="/content" component={ContentPage} />
               <IsAdmin exact path="/admindashboard" component={AdminPage} />
               <Route component={NotFound} />
             </Switch>

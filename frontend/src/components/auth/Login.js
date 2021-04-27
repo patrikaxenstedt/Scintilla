@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+/* import { Link } from 'react-router-dom'; */
 import { connect } from 'react-redux';
 import { loginUser } from '../../actions/authActions';
 import classnames from 'classnames';
+import Screen from '../UI/Screen';
+import Hero from '../UI/Hero';
+import heroAnimation from '../../assets/animations/signin.json';
+import Wave from '../UI/Wave';
 
 class Login extends Component {
   state = {
@@ -37,51 +41,72 @@ class Login extends Component {
     const { email, password, errors } = this.state;
 
     return (
-      <div className="login">
-        <Link to="/login">
-          <h2 class="active">Sign in</h2>
-        </Link>
-        <Link to="/register">
-          <h2 class="nonactive">Sign up</h2>
-        </Link>
-        <form onSubmit={this.onSubmitHandler}>
-          <input
-            type="text"
-            name="email"
-            placeholder="Your email"
-            className={classnames('text', {
-              'is-invalid': errors.email,
-            })}
-            value={email}
-            onChange={this.onChange}
-          />
-          {errors && <div className="error-email">{errors.email}</div>}
-          <span className="login-span">Email</span>
-          <div className="clear-big"></div>
-          <div>
-            <input
-              type="password"
-              name="password"
-              placeholder="Your password"
-              className={classnames('text', {
-                'is-invalid': errors.password,
-              })}
-              value={password}
-              onChange={this.onChange}
-            />
-            {errors && <div className="error-password"></div>}
-          </div>
-          <span className="login-span">Password</span>
-          <div className="clear"></div>
+      <Screen>
+        <Hero
+          title={'Sign in here'}
+          subtitle="subtitle"
+          image={heroAnimation}
+        />
+        <div className="bg-black">
+          <div className="bg-black text-white w-full max-w-xs">
+            <form
+              onSubmit={this.onSubmitHandler}
+              className="shadow-md rounded px-8 pt-6 pb-8 mb-4"
+            >
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Your email"
+                  className={classnames(
+                    'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
+                    {
+                      'shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline':
+                        errors.email,
+                    }
+                  )}
+                  value={email}
+                  onChange={this.onChange}
+                />
+                {errors && <div className="error-email">{errors.email}</div>}
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Your password"
+                  className={classnames(
+                    'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
+                    {
+                      'shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline':
+                        errors.password,
+                    }
+                  )}
+                  value={password}
+                  onChange={this.onChange}
+                />
+                {errors && (
+                  <div className="error-password">{errors.password}</div>
+                )}
+              </div>
 
-          <button
-            disabled={!(this.state.email && this.state.password)}
-            className="signin"
-          >
-            Sign In
-          </button>
-        </form>
-      </div>
+              <button
+                disabled={!(this.state.email && this.state.password)}
+                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              >
+                Sign In
+              </button>
+            </form>
+          </div>
+        </div>
+        <Wave />
+      </Screen>
     );
   }
 }

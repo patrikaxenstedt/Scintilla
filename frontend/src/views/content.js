@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import Banner from '../components/Banner';
 import Hero from '../components/Hero';
 
-class Content extends Component {
+class ContentPage extends Component {
   render() {
     const { isAuthenticated } = this.props.auth;
     if (isAuthenticated) {
@@ -21,7 +21,7 @@ class Content extends Component {
   }
 }
 
-Content.propTypes = {
+ContentPage.propTypes = {
   auth: PropTypes.object.isRequired,
 };
 
@@ -29,4 +29,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps)(Content);
+export default connect(mapStateToProps)(ContentPage);
