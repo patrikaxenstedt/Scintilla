@@ -1,8 +1,8 @@
-import React, { Component, useReducer } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { logoutUser } from '../actions/authActions';
+import { logoutUser } from '../../actions/authActions';
 import { FaAlignJustify } from 'react-icons/fa';
 //import logo from '../assets/spacecat.png';
 

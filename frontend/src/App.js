@@ -10,16 +10,14 @@ import NotAuth from './components/guards/NotAuth';
 import IsAuth from './components/guards/isAuth';
 import IsAdmin from './components/guards/isAdmin';
 
-import Home from './components/home/Home';
+import Home from './pages/Home';
+import ContentPage from '../src/pages/Content';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Content from './views/content';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import NotFound from './views/NotFound';
 import AdminPage from './views/AdminPage';
+import NotFound from './views/NotFound';
 
-import './App.css';
+import Navbar from './components/Navbar/Navbar';
 
 // Checks the local storage if there's a token, and if it still valid
 if (localStorage.jwtToken) {
@@ -43,17 +41,16 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className="App">
+          <div>
             <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
               <NotAuth exact path="/login" component={Login} />
               <NotAuth exact path="/register" component={Register} />
-              <IsAuth exact path="/content" component={Content} />
+              <IsAuth exact path="/content" component={ContentPage} />
               <IsAdmin exact path="/admindashboard" component={AdminPage} />
               <Route component={NotFound} />
             </Switch>
-            <Footer />
           </div>
         </Router>
       </Provider>
