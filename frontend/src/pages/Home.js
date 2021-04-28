@@ -17,12 +17,12 @@ const Home = () => {
         <div className="container flex flex-wrap flex-col px-5 mx-auto md:flex-row">
           <div className="flex flex-row w-full mt-0 justify-center text-center md:text-left md:w-2/5">
             <Link to="/login">
-              <button class="w-32 m-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button class="w-32 m-1.5 bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full">
                 Sign in
               </button>
             </Link>
             <Link to="/register">
-              <button class="w-32 m-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button class="w-32 m-1.5 bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full">
                 Sign up
               </button>
             </Link>

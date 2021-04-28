@@ -160,12 +160,12 @@ class Register extends Component {
                     this.state.password2
                   )
                 }
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full m-1.5 "
               >
                 Create account
               </button>
               <Link to="/">
-                <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 ml-4 rounded focus:outline-none focus:shadow-outline">
+                <button className="bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full m-1.5 ">
                   Back
                 </button>
               </Link>
