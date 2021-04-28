@@ -36,7 +36,9 @@ class Login extends Component {
       this.setState({ errors: nextProps.errors });
     }
   }
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const { email, password, errors } = this.state;
 
@@ -44,7 +46,7 @@ class Login extends Component {
       <Screen>
         <Hero
           title={'Sign in here'}
-          subtitle="subtitle"
+          subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
           image={heroAnimation}
         />
         <div className="w-full bg-black text-white">

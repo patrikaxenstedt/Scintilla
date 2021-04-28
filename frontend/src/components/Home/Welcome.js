@@ -1,6 +1,7 @@
 import Image from '../UI/Image';
+import { Link } from 'react-router-dom';
 
-const Founder = () => {
+const Welcome = () => {
   return (
     <div className="bg-primary">
       <div className="container mx-auto mb-20 bg-primary">
@@ -23,6 +24,7 @@ const Founder = () => {
               dolorum fuga.
             </p>
           </div>
+
           <div className="flex flex-1 justify-center">
             <Image
               className="w-auto rounded-3xl mt-10 hidden sm:block"
@@ -32,9 +34,24 @@ const Founder = () => {
             />
           </div>
         </div>
+
+        <div className="flex flex-col items-center my-10 mx-20 xl:flex-row">
+          <div className="flex flex-row text-center xl:w-1/2 lg:text-left">
+            <Link to="/login">
+              <button class="w-32 m-1.5 bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full">
+                Sign in
+              </button>
+            </Link>
+            <Link to="/register">
+              <button class="w-32 m-1.5 bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full">
+                Sign up
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Founder;
+export default Welcome;
