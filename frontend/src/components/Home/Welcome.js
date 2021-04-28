@@ -26,7 +26,7 @@ const Founder = () => {
           <div className="flex flex-1 justify-center">
             <Image
               className="w-auto rounded-3xl mt-10 hidden sm:block"
-              src="favicon.webp"
+              src="moon-landing.png"
               width="416px"
               height="416px"
             />
