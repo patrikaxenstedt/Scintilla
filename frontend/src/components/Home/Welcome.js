@@ -1,5 +1,4 @@
 import Image from '../UI/Image';
-import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return (
@@ -32,21 +31,6 @@ const Welcome = () => {
               width="416px"
               height="416px"
             />
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center my-10 mx-20 xl:flex-row">
-          <div className="flex flex-row text-center xl:w-1/2 lg:text-left">
-            <Link to="/login">
-              <button class="w-32 m-1.5 bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full">
-                Sign in
-              </button>
-            </Link>
-            <Link to="/register">
-              <button class="w-32 m-1.5 bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full">
-                Sign up
-              </button>
-            </Link>
           </div>
         </div>
       </div>
