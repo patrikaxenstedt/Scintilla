@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-/* import { Link } from 'react-router-dom'; */
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { loginUser } from '../../actions/authActions';
 import classnames from 'classnames';
@@ -102,6 +102,11 @@ class Login extends Component {
               >
                 Sign In
               </button>
+              <Link to="/">
+                <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 ml-4 rounded focus:outline-none focus:shadow-outline">
+                  Back
+                </button>
+              </Link>
             </form>
           </div>
         </div>
