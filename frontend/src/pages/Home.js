@@ -1,8 +1,8 @@
 import Wave from '../components/UI/Wave';
 import Hero from '../components/UI/Hero';
-import Founder from '../components/Hometwo/Founder';
+import Welcome from '../components/Home/Welcome';
 import Screen from '../components/UI/Screen';
-import heroAnimation from '../assets/animations/rocket-main.json';
+import heroAnimation from '../assets/lottie/rocket-main.json';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
       </div>
       <Wave />
-      <Founder />
+      <Welcome />
     </Screen>
   );
 };

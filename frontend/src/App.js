@@ -11,16 +11,13 @@ import IsAuth from './components/guards/isAuth';
 import IsAdmin from './components/guards/isAdmin';
 
 import Home from './pages/Home';
+import ContentPage from '../src/pages/Content';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Navbar from './components/Navbar';
-
-import NotFound from './views/NotFound';
 import AdminPage from './views/AdminPage';
+import NotFound from './views/NotFound';
 
-/* import SignInPage from '../src/pages/SignIn';
-import SignUpPage from '../src/pages/SignUp'; */
-import ContentPage from '../src/pages/Content';
+import Navbar from './components/Navbar/Navbar';
 
 // Checks the local storage if there's a token, and if it still valid
 if (localStorage.jwtToken) {

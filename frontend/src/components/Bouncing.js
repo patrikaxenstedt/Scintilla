@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bouncing = () => {
   return (
-    <div className="center-svg">
+    <div className="">
       <svg
         class="scroll-down"
         fill="#fff"

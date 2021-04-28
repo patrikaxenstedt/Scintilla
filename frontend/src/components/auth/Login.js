@@ -6,7 +6,7 @@ import { loginUser } from '../../actions/authActions';
 import classnames from 'classnames';
 import Screen from '../UI/Screen';
 import Hero from '../UI/Hero';
-import heroAnimation from '../../assets/animations/signin.json';
+import heroAnimation from '../../assets/lottie/signin.json';
 import Wave from '../UI/Wave';
 
 class Login extends Component {
@@ -98,7 +98,7 @@ class Login extends Component {
 
               <button
                 disabled={!(this.state.email && this.state.password)}
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Sign In
               </button>

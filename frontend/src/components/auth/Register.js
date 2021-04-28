@@ -6,7 +6,7 @@ import { registerUser } from '../../actions/authActions';
 import classnames from 'classnames';
 import Screen from '../UI/Screen';
 import Hero from '../UI/Hero';
-import heroAnimation from '../../assets/animations/signin.json';
+import heroAnimation from '../../assets/lottie/signin.json';
 import Wave from '../UI/Wave';
 
 class Register extends Component {
