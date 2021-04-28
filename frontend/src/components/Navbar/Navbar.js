@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logoutUser } from '../../actions/authActions';
-import { FaAlignJustify } from 'react-icons/fa';
+
 //import logo from '../assets/spacecat.png';
 
 class Navbar extends Component {
@@ -35,9 +35,7 @@ class Navbar extends Component {
               type="button"
               className="nav-btn"
               onClick={this.handleToggle}
-            >
-              <FaAlignJustify className="nav-icon" />
-            </button>
+            ></button>
           </div>
           {isAuthenticated ? (
             <ul

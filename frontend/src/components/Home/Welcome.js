@@ -1,6 +1,6 @@
 import Image from '../UI/Image';
 
-const Founder = () => {
+const Welcome = () => {
   return (
     <div className="bg-primary">
       <div className="container mx-auto mb-20 bg-primary">
@@ -23,6 +23,7 @@ const Founder = () => {
               dolorum fuga.
             </p>
           </div>
+
           <div className="flex flex-1 justify-center">
             <Image
               className="w-auto rounded-3xl mt-10 hidden sm:block"
@@ -37,4 +38,4 @@ const Founder = () => {
   );
 };
 
-export default Founder;
+export default Welcome;

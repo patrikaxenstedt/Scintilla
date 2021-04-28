@@ -3,7 +3,7 @@ const Screen = (props) => {
     <div
       className="flex flex-col h-auto justify-between"
       style={{
-        marginBottom: '60px',
+        marginBottom: '0px',
       }}
     >
       {props.children}
