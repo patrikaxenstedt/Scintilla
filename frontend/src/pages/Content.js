@@ -8,8 +8,12 @@ import Screen from '../components/UI/Screen';
 import heroAnimation from '../assets/lottie/success.json';
 
 class ContentPage extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
-    const { isAuthenticated, user } = this.props.auth;
+    const { isAuthenticated } = this.props.auth;
     if (isAuthenticated) {
       return (
         <Screen>
@@ -20,7 +24,7 @@ class ContentPage extends Component {
           />
           <div className="w-full bg-black text-white">
             <div className="container flex flex-wrap flex-col px-5 mx-auto md:flex-row">
-              {user.name}
+              test
               <div className="flex flex-row w-full mt-0 justify-center text-center md:text-left md:w-2/5"></div>
             </div>
           </div>

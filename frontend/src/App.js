@@ -17,7 +17,7 @@ import Register from './components/auth/Register';
 import AdminPage from './views/AdminPage';
 import NotFound from './views/NotFound';
 
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Nav';
 
 // Checks the local storage if there's a token, and if it still valid
 if (localStorage.jwtToken) {
