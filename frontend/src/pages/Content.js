@@ -13,18 +13,19 @@ class ContentPage extends Component {
   }
 
   render() {
-    const { isAuthenticated } = this.props.auth;
+    const { isAuthenticated, user } = this.props.auth;
     if (isAuthenticated) {
       return (
         <Screen>
           <Hero
-            title={'Logged in successfully!'}
+            user={user.name}
+            title={'Welcome,'}
             subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
             image={heroAnimation}
           />
           <div className="w-full bg-black text-white">
             <div className="container flex flex-wrap flex-col px-5 mx-auto md:flex-row">
-              test
+              Lorem ipsum
               <div className="flex flex-row w-full mt-0 justify-center text-center md:text-left md:w-2/5"></div>
             </div>
           </div>

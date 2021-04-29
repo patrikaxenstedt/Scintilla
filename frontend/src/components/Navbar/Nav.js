@@ -13,7 +13,7 @@ class Nav extends Component {
   }
 
   render() {
-    const { isAuthenticated, user } = this.props.auth;
+    const { isAuthenticated } = this.props.auth;
 
     return (
       <nav className="nav flex flex-wrap items-center justify-between px-4 bg-black text-white mt-0 fixed w-full z-10 top-0">
@@ -48,7 +48,7 @@ class Nav extends Component {
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
                 activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
               >
-                Welcome {user.name}!
+                Contentpage
               </NavLink>
               <NavLink
                 to="/"
