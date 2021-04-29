@@ -6,6 +6,8 @@ import Screen from '../components/UI/Screen';
 import heroAnimation from '../assets/lottie/rocket-main.json';
 import { Link } from 'react-router-dom';
 
+import Footer from '../components/Footer/Foot';
+
 class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -37,6 +39,7 @@ class Home extends Component {
         </div>
         <Wave />
         <Welcome />
+        <Footer />
       </Screen>
     );
   }
