@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logoutUser } from '../../actions/authActions';
-import NavItem from './NavItem';
+/* import NavItem from './NavItem'; */
 import Image from '../UI/Image';
 import './Nav.css';
 
@@ -94,15 +94,43 @@ class Nav extends Component {
         </label>
         {isAuthenticated ? (
           <ul className="flex menu border-gray-500 border-b justify-end m-0 w-full md:border-none md:w-auto">
-            <NavItem path="content">Welcome {user.name}</NavItem>
-            <NavItem path="/" exact>
-              Startpage
-            </NavItem>
-            <NavItem path="/rockets">Rockets</NavItem>
-            <NavItem path="/launches">Launches</NavItem>
-            <NavItem path="/logout" onClick={this.onLogout.bind(this)}>
-              Sign out
-            </NavItem>
+            <li className="border-t border-gray-500 md:border-none">
+              <NavLink
+                to="/content"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+              >
+                Welcome {user.name}
+              </NavLink>
+              <NavLink
+                to="/"
+                exact
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+              >
+                Startpage
+              </NavLink>
+              <Link
+                to="/rockets"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+              >
+                Rockets
+              </Link>
+              <Link
+                to="/launches"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+              >
+                Launches
+              </Link>
+              <NavLink
+                to="/logout"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                onClick={this.onLogout.bind(this)}
+              >
+                Sign out
+              </NavLink>
+            </li>
           </ul>
         ) : (
           <div></div>
