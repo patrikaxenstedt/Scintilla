@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom';
+/* import { NavLink, useLocation } from 'react-router-dom';
 
 const NavItem = ({ path, exact, children }) => {
   const location = useLocation();
@@ -18,3 +18,4 @@ const NavItem = ({ path, exact, children }) => {
 };
 
 export default NavItem;
+ */

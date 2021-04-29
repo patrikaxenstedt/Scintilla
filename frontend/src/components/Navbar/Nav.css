@@ -30,4 +30,11 @@
   .menu-btn:checked ~ .menu {
     display: block;
   }
+
+  .ham-hover:hover {
+    transition-duration: 0.3s;
+    color: grey;
+  }
 }
+
+/* activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black" */

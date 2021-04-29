@@ -8,13 +8,13 @@ import Image from '../UI/Image';
 import './Nav.css';
 
 class Nav extends Component {
-  state = {
+  /*   state = {
     isOpen: false,
   };
 
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
-  };
+  }; */
 
   onLogout(e) {
     e.preventDefault();
@@ -97,34 +97,36 @@ class Nav extends Component {
             <li className="border-t border-gray-500 md:border-none">
               <NavLink
                 to="/content"
-                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
                 activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
               >
-                Welcome {user.name}
+                Welcome {user.name}!
               </NavLink>
               <NavLink
                 to="/"
                 exact
-                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
                 activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
               >
                 Startpage
               </NavLink>
-              <Link
+              <NavLink
                 to="/rockets"
-                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
+                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
               >
                 Rockets
-              </Link>
-              <Link
-                to="/launches"
-                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+              </NavLink>
+              <NavLink
+                to="/404"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
+                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
               >
-                Launches
-              </Link>
+                ???
+              </NavLink>
               <NavLink
                 to="/logout"
-                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
                 activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
                 onClick={this.onLogout.bind(this)}
               >
