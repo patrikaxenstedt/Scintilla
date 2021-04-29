@@ -76,7 +76,7 @@ class Nav extends Component {
             </li>
           </ul>
         ) : (
-          <div></div>
+          <div className="hidden"></div>
         )}
       </nav>
     );
