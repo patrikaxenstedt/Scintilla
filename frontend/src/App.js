@@ -15,7 +15,7 @@ import ContentPage from '../src/pages/Content';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import AdminPage from './views/AdminPage';
-import NotFound from './views/NotFound';
+import NotFound from './pages/NotFound';
 
 import Navbar from './components/Navbar/Nav';
 
