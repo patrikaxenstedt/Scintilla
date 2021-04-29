@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Wave from '../components/UI/Wave';
-import Lottie from 'lottie-react';
+import { Link } from 'react-router-dom';
 import Screen from '../components/UI/Screen';
 import Hero from '../components/UI/Hero';
 import Welcome from '../components/Home/Welcome';
@@ -21,7 +21,11 @@ class NotFound extends Component {
         />
         <div className="w-full bg-black text-white">
           <div className="container flex flex-wrap flex-col px-5 mx-auto md:flex-row">
-            Lorem ipsum
+            <Link to="/content">
+              <button class="w-32 m-1.5 bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full">
+                Back
+              </button>
+            </Link>
             <div className="flex flex-row w-full mt-0 justify-center text-center md:text-left md:w-2/5"></div>
           </div>
         </div>
