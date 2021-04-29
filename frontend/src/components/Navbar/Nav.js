@@ -16,7 +16,7 @@ class Nav extends Component {
     const { isAuthenticated, user } = this.props.auth;
 
     return (
-      <nav className="nav flex flex-wrap items-center justify-between px-4 bg-black text-white">
+      <nav className="nav flex flex-wrap items-center justify-between px-4 bg-black text-white mt-0 fixed w-full z-10 top-0">
         <Link
           className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest"
           to="/"
