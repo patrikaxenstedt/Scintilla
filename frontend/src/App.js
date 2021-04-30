@@ -14,7 +14,7 @@ import Home from './pages/Home';
 import ContentPage from '../src/pages/Content';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import AdminPage from './views/AdminPage';
+import AdminPage from './pages/AdminPage';
 import NotFound from './pages/NotFound';
 
 import Navbar from './components/Navbar/Nav';
