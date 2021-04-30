@@ -127,9 +127,9 @@ router.post("/login", (req, res, next) => {
 
     User.findOne({ email })
       .then((user) => {
-        // Check for user
+        // Check for users email
         if (!user) {
-          errors.email = "User does not exist";
+          errors.email = "Email does not exist";
           return res.status(400).json(errors);
         } else {
           // Check the password
@@ -157,7 +157,7 @@ router.post("/login", (req, res, next) => {
                   }
                 );
               } else {
-                errors.password = "Password incorrect";
+                errors.password = "Password is incorrect";
                 return res.status(400).json(errors);
               }
             })
