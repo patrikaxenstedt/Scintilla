@@ -6,6 +6,7 @@ import Hero from '../components/UI/Hero';
 import Welcome from '../components/Home/Welcome';
 import Screen from '../components/UI/Screen';
 import heroAnimation from '../assets/lottie/success.json';
+import Footer from '../components/Footer/Foot';
 
 class ContentPage extends Component {
   componentDidMount() {
@@ -31,6 +32,7 @@ class ContentPage extends Component {
           </div>
           <Wave />
           <Welcome />
+          <Footer />
         </Screen>
       );
     }
