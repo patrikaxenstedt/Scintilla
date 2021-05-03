@@ -6,6 +6,7 @@ import RocketList from '../components/Rockets/RocketList';
 import Screen from '../components/UI/Screen';
 import heroAnimation from '../assets/lottie/rockets.json';
 import RocketsContext from '../contexts/RocketsContext';
+import Welcome from '../components/Home/Welcome';
 
 const Rockets = () => {
   const { rockets } = useContext(RocketsContext);
@@ -18,8 +19,11 @@ const Rockets = () => {
         image={heroAnimation}
       />
       <Wave />
-      <Title message="Rockets" />
+      <div className="bg-primary">
+        <Title message="Rockets" />
+      </div>
       <RocketList rockets={rockets} />
+      <Welcome />
     </Screen>
   );
 };
