@@ -4,7 +4,7 @@ import Wave from '../components/UI/Wave';
 import Title from '../components/UI/Title';
 import RocketList from '../components/Rockets/RocketList';
 import Screen from '../components/UI/Screen';
-import heroAnimation from '../assets/lottie/rocket-launch.json';
+import heroAnimation from '../assets/lottie/rockets.json';
 import RocketsContext from '../contexts/RocketsContext';
 
 const Rockets = () => {
@@ -13,8 +13,8 @@ const Rockets = () => {
   return (
     <Screen>
       <Hero
-        title="Discover all SpaceX Rockets"
-        subtitle="A rocket is a missile, spacecraft, aircraft or other vehicle that obtains thrust from a rocket engine. "
+        title="Data about SpaceX rockets"
+        subtitle="Below is a list of rockets"
         image={heroAnimation}
       />
       <Wave />
