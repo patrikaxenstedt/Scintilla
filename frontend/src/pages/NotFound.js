@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Screen from '../components/UI/Screen';
 import Hero from '../components/UI/Hero';
 import Welcome from '../components/Home/Welcome';
+import Footer from '../components/Footer/Foot';
 import heroAnimation from '../assets/lottie/404.json';
 
 class NotFound extends Component {
@@ -31,6 +32,7 @@ class NotFound extends Component {
         </div>
         <Wave />
         <Welcome />
+        <Footer />
       </Screen>
     );
   }
