@@ -16,6 +16,8 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import AdminPage from './pages/AdminPage';
 import NotFound from './pages/NotFound';
+import Rockets from './pages/Rockets';
+import { RocketsContextProvider } from './contexts/RocketsContext';
 
 import Navbar from './components/Navbar/Nav';
 
@@ -39,21 +41,24 @@ if (localStorage.jwtToken) {
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <Router>
-          <div>
-            <Navbar />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <NotAuth exact path="/login" component={Login} />
-              <NotAuth exact path="/register" component={Register} />
-              <IsAuth exact path="/content" component={ContentPage} />
-              <IsAdmin exact path="/admindashboard" component={AdminPage} />
-              <Route component={NotFound} />
-            </Switch>
-          </div>
-        </Router>
-      </Provider>
+      <RocketsContextProvider>
+        <Provider store={store}>
+          <Router>
+            <div>
+              <Navbar />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <NotAuth exact path="/login" component={Login} />
+                <NotAuth exact path="/register" component={Register} />
+                <IsAuth exact path="/content" component={ContentPage} />
+                <IsAuth exact path="/rockets" component={Rockets} />
+                <IsAdmin exact path="/admindashboard" component={AdminPage} />
+                <Route component={NotFound} />
+              </Switch>
+            </div>
+          </Router>
+        </Provider>
+      </RocketsContextProvider>
     );
   }
 }

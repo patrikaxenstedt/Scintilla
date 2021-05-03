@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = React.lazy(() => import('../../components/UI/Card'));
+import Card from '../UI/Card';
 
 const RocketList = ({ rockets }) => {
   return (
