@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { loginUser } from '../../actions/authActions';
 import classnames from 'classnames';
-import Screen from '../UI/Screen';
-import Hero from '../UI/Hero';
+
+import Test from '../UI/Test';
 import heroAnimation from '../../assets/lottie/signin.json';
-import Wave from '../UI/Wave';
 
 class Login extends Component {
   state = {
@@ -44,16 +43,12 @@ class Login extends Component {
 
     return (
       <>
-        {/*  <Hero
-          title={'Sign in here'}
-          subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
-          image={heroAnimation}
-        /> */}
         <main>
           <section className="absolute w-full h-full">
             <div className="absolute top-0 w-full h-full bg-black">
-              <div className="container mx-auto px-4 h-full">
-                <div className="flex content-center items-center justify-center h-full">
+              <Test image={heroAnimation} />
+              <div className="container mx-auto px-4">
+                <div className="flex content-center items-center justify-center">
                   <div className="w-full lg:w-4/12 px-4">
                     <h1 className="text-5xl font-bold leading-tight text-center mt-14 text-white">
                       Login here
