@@ -6,7 +6,48 @@ import { logoutUser } from '../../actions/authActions';
 import Image from '../UI/Image';
 import './Nav.css';
 
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
+
 class Nav extends Component {
+  submit = () => {
+    confirmAlert({
+      customUI: ({ onClose }) => {
+        return (
+          <div className="custom-ui">
+            <h1>Are you sure?</h1>
+            <p>Do you want to logout?</p>
+            <button onClick={onClose}>No</button>
+            <button
+              onClick={() => {
+                this.props.logoutUser();
+                onClose();
+              }}
+            >
+              Yes, logout
+            </button>
+          </div>
+        );
+      },
+    });
+  };
+  /*   submit = () => {
+    confirmAlert({
+      title: 'Logging out..',
+      message: 'Are you sure to do this?',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: () => {
+            this.props.logoutUser();
+          },
+        },
+        {
+          label: 'No',
+        },
+      ],
+    });
+  }; */
   onLogout(e) {
     e.preventDefault();
     this.props.logoutUser();
@@ -69,7 +110,7 @@ class Nav extends Component {
                 to="/logout"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
                 activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
-                onClick={this.onLogout.bind(this)}
+                onClick={this.submit}
               >
                 Sign out
               </NavLink>
