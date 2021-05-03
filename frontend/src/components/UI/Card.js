@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-/* import Truncate from "react-truncate"; */
 
 import Image from './Image';
 
 const Card = ({ title, active, imageUrl, date, to, details, isRocket }) => {
   return (
     <div
-      className={`flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:shadow-2xl`}
+      className={`bg-purple-900 flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:shadow-2xl`}
       style={{
         height: '480px',
       }}
@@ -43,13 +42,13 @@ const Card = ({ title, active, imageUrl, date, to, details, isRocket }) => {
           </div>
 
           <div className="flex flex-1">
-            <span className="text-gray-600">
+            <span className="text-white-500">
               {date && new Date(date).toLocaleDateString('en-GB')}
             </span>
           </div>
 
           <div className="flex flex-1 mt-3">
-            <div className="text-gray-600" width="250">
+            <div className="text-white" width="250">
               {details ? details : 'No Data'}
             </div>
           </div>
