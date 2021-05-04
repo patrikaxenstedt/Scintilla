@@ -51,14 +51,6 @@ class Nav extends Component {
                 Contentpage
               </NavLink>
               <NavLink
-                to="/"
-                exact
-                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
-              >
-                Startpage
-              </NavLink>
-              <NavLink
                 to="/rockets"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
                 activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
