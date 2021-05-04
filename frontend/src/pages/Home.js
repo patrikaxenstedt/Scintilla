@@ -42,12 +42,12 @@ class Home extends Component {
             <div className="container flex flex-wrap px-5 mx-auto md:flex-row">
               <div className="flex flex-row w-full justify-center text-center">
                 <Link to="/login">
-                  <button class="w-32 m-1.5 bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full">
+                  <button class="w-32 m-1.5 bg-mainTwo hover:bg-opacity-50 text-white font-bold py-2 px-8 rounded-full">
                     Sign in
                   </button>
                 </Link>
                 <Link to="/register">
-                  <button class="w-32 m-1.5 bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full">
+                  <button class="w-32 m-1.5 bg-mainOne hover:bg-opacity-50 text-white font-bold py-2 px-8 rounded-full">
                     Sign up
                   </button>
                 </Link>
