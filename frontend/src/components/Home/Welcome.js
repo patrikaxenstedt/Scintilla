@@ -2,8 +2,8 @@ import Image from '../UI/Image';
 
 const Welcome = () => {
   return (
-    <div className="bg-primary">
-      <div className="container mx-auto mb-20 bg-primary">
+    <div className="bg-darkOne">
+      <div className="container mx-auto mb-20 bg-darkOne">
         <h1 className="w-full text-5xl text-white font-bold leading-tight text-center my-14 ">
           Lorem ipsum
         </h1>

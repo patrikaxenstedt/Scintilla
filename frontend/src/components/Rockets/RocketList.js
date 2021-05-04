@@ -4,7 +4,7 @@ import Card from '../UI/Card';
 
 const RocketList = ({ rockets }) => {
   return (
-    <div className="my-auto mx-auto grid grid-cols-1 justify-items-center lg:grid-cols-2 xl:grid-cols-4 bg-primary w-full">
+    <div className="my-auto mx-auto grid grid-cols-1 justify-items-center lg:grid-cols-2 xl:grid-cols-4 bg-darkOne w-full">
       {rockets.map((rocket) => (
         <Card
           key={rocket.rocket_id}

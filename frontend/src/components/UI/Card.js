@@ -5,7 +5,7 @@ import Image from './Image';
 const Card = ({ title, active, imageUrl, date, to, details, isRocket }) => {
   return (
     <div
-      className={`bg-purple-900 flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:shadow-2xl`}
+      className={`bg-darkTwo flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:shadow-2xl overflow-hidden`}
       style={{
         height: '480px',
       }}
@@ -29,26 +29,26 @@ const Card = ({ title, active, imageUrl, date, to, details, isRocket }) => {
             <div className="relative inline-flex rounded-md shadow-sm ">
               <span
                 className={`animate-ping absolute inline-flex h-full w-full rounded-full ${
-                  active ? 'bg-green-500' : 'bg-red-500'
+                  active ? 'bg-mainTwo' : 'bg-mainOne'
                 } opacity-75`}
               />
 
               <span
                 className={`relative inline-flex rounded-full h-3 w-3 ${
-                  active ? 'bg-green-500' : 'bg-red-500'
+                  active ? 'bg-mainTwo' : 'bg-mainOne'
                 }`}
               />
             </div>
           </div>
 
           <div className="flex flex-1">
-            <span className="text-white-500">
+            <span className="text-white">
               {date && new Date(date).toLocaleDateString('en-GB')}
             </span>
           </div>
 
           <div className="flex flex-1 mt-3">
-            <div className="text-white" width="250">
+            <div className="text-white opacity-75" width="250">
               {details ? details : 'No Data'}
             </div>
           </div>
