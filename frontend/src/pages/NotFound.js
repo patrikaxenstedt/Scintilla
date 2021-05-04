@@ -23,7 +23,7 @@ class NotFound extends Component {
         <div className="w-full bg-black text-white">
           <div className="container flex flex-wrap flex-col px-5 mx-auto md:flex-row">
             <Link to="/content">
-              <button class="w-32 m-1.5 bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full">
+              <button class="w-32 m-1.5 bg-mainTwo hover:bg-opacity-50 text-white font-bold py-2 px-8 rounded-full">
                 Back
               </button>
             </Link>
