@@ -60,8 +60,8 @@ class Login extends Component {
                           onSubmit={this.onSubmitHandler}
                           className="shadow-md rounded px-8 pt-6 pb-8 mb-4  bg-black bg-opacity-50"
                         >
-                          <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">
+                          <div className="mb-4">
+                            <label className="block text-gray-700 text-sm font-bold mb-2">
                               Email
                             </label>
                             <input
@@ -82,8 +82,8 @@ class Login extends Component {
                               <div className="error-email">{errors.email}</div>
                             )}
                           </div>
-                          <div class="mb-6">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">
+                          <div className="mb-6">
+                            <label className="block text-gray-700 text-sm font-bold mb-2">
                               Password
                             </label>
                             <input

@@ -6,7 +6,6 @@ import RocketList from '../components/Rockets/RocketList';
 import Screen from '../components/UI/Screen';
 import heroAnimation from '../assets/lottie/rockets.json';
 import RocketsContext from '../contexts/RocketsContext';
-import Welcome from '../components/Home/Welcome';
 import Footer from '../components/Footer/Foot';
 
 const Rockets = () => {
@@ -38,7 +37,6 @@ const Rockets = () => {
         <Title message="Rockets" />
       </div>
       <RocketList rockets={rockets} />
-      <Welcome />
       <Footer />
     </Screen>
   );
