@@ -5,7 +5,7 @@ import Image from './Image';
 const Card = ({ title, active, imageUrl, date, to, details, isRocket }) => {
   return (
     <div
-      className={`bg-darkTwo flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:shadow-2xl overflow-hidden`}
+      className={`bg-darkTwo flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:opacity-50 overflow-hidden`}
       style={{
         height: '480px',
       }}
