@@ -4,7 +4,12 @@ module.exports = {
   theme: {
     backgroundColor: (theme) => ({
       ...theme('colors'),
-      primary: '#313131',
+      mainOne: '#363636',
+      mainTwo: '#8739F9',
+      mainThree: '#C651CD',
+      darkOne: '#100F10',
+      darkTwo: '#1B1B1B',
+      darkThree: '#242424',
     }),
     extend: {},
   },

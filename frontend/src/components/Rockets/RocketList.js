@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Card = React.lazy(() => import('../../components/UI/Card'));
+import Card from '../UI/Card';
 
 const RocketList = ({ rockets }) => {
   return (
-    <div className="my-auto mx-auto grid grid-cols-1 justify-items-center lg:grid-cols-2 xl:grid-cols-3">
+    <div className="my-auto mx-auto grid grid-cols-1 justify-items-center lg:grid-cols-2 xl:grid-cols-4 bg-darkOne w-full">
       {rockets.map((rocket) => (
         <Card
           key={rocket.rocket_id}
