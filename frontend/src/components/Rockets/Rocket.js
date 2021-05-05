@@ -21,18 +21,18 @@ const Rocket = ({
   }
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto text-white">
       <h1 className="flex justify-center w-full text-5xl font-bold leading-tight items-center my-14">
         {name}
         <span className="relative rounded-md shadow-sm ml-8 hidden xl:inline-flex">
           <span
             className={`animate-ping absolute inline-flex h-full w-full rounded-full ${
-              active ? 'bg-green-500' : 'bg-red-500'
+              active ? 'bg-mainTwo' : 'bg-mainOne'
             } opacity-75`}
           />
           <span
             className={`relative inline-flex rounded-full h-6 w-6 ${
-              active ? 'bg-green-500' : 'bg-red-500'
+              active ? 'bg-mainTwo' : 'bbg-mainOne'
             }`}
           />
         </span>

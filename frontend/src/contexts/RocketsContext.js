@@ -14,7 +14,7 @@ export const RocketsContextProvider = (props) => {
         const data = await response.json();
         setRockets(data);
       } catch (error) {
-        console.log(`Failed to fetch data from URL ${URL}`);
+        console.log(`Failed to fetch data from URL: ${URL}`);
       }
     };
     fetchRockets();
