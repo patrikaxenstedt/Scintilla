@@ -25,7 +25,6 @@ class Home extends Component {
             subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
             image={heroAnimation}
           />
-          <Wave />
           <Welcome />
           <Footer />
         </Screen>
@@ -33,12 +32,7 @@ class Home extends Component {
     } else
       return (
         <Screen>
-          <Hero
-            title={'Welcome to Scintilla'}
-            subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
-            image={heroAnimation}
-          />
-          <div className="w-full bg-black text-white">
+          <div className="w-full bg-black text-white mt-20">
             <div className="container flex flex-wrap px-5 mx-auto md:flex-row">
               <div className="flex flex-row w-full justify-center text-center">
                 <Link to="/login">
@@ -54,7 +48,11 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <Wave />
+          <Hero
+            title={'Welcome to Scintilla'}
+            subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+            image={heroAnimation}
+          />
           <Welcome />
           <Footer />
         </Screen>

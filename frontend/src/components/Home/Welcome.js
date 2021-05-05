@@ -2,8 +2,8 @@ import Image from '../UI/Image';
 
 const Welcome = () => {
   return (
-    <div className="bg-darkOne">
-      <div className="container mx-auto mb-20 bg-darkOne">
+    <div className="bg-darkOne ">
+      <div className="container mx-auto mb-20 bg-darkOne h-screen">
         <h1 className="w-full text-3xl text-white opacity-50 font-bold leading-tight text-center my-14">
           SpaceX was founded under the belief that a future where humanity is
           out exploring the stars is fundamentally more exciting than one where
