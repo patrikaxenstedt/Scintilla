@@ -1,3 +1,4 @@
+import CountUp from 'react-countup';
 import Image from '../UI/Image';
 import Loader from '../UI/Loader';
 
@@ -9,6 +10,8 @@ const Rocket = ({
   firstFlight,
   diameter,
   height,
+  mass,
+  cost_per_launch,
   imageUrl,
   isLoading,
 }) => {
@@ -37,34 +40,48 @@ const Rocket = ({
           />
         </span>
       </h1>
+
       <div className="flex flex-col items-center my-14 mx-20 text-center sm:text-left xl:flex-row">
         <div className="flex flex-col w-full xl:w-1/2">
-          <h1 className="text-4xl font-bold my-8">Description</h1>
-          <p className="text-base">{description}</p>
+          <div className="flex flex-col justify-between sm:flex-row">
+            <div className="w-full">
+              <h1 className="text-3xl my-8 opacity-50">Diameter</h1>
+              <CountUp end={diameter} duration={2} className="text-5xl" /> meter
+            </div>
+            <div className="w-full">
+              <h1 className="text-3xl my-8 opacity-50">Mass</h1>
+              <CountUp end={mass} duration={5} className="text-5xl" /> kg
+            </div>
+            <div className="w-full sm:w-3/4">
+              <h1 className="text-3xl my-8 opacity-50">Height</h1>
+              <CountUp end={height} duration={5} className="text-5xl" />
+              meter
+            </div>
+          </div>
 
           <div className="flex flex-col justify-between sm:flex-row">
             <div className="w-full">
-              <h1 className="text-3xl my-8">Country</h1>
-              <span className="">{country}</span>
+              <h1 className="text-3xl my-8 opacity-50">Country</h1>
+              <span className="text-5xl">{country}</span>
+            </div>
+            <div className="w-full">
+              <h1 className="text-3xl my-8 opacity-50">Cost per launch</h1>
+              <CountUp
+                end={cost_per_launch}
+                duration={5}
+                className="text-5xl"
+              />{' '}
+              $
             </div>
             <div className="w-full sm:w-3/4">
-              <h1 className="text-3xl my-8">First Flight</h1>
-              <span className="">
+              <h1 className="text-3xl my-8 opacity-50">First Flight</h1>
+              <span className="text-5xl">
                 {new Date(firstFlight).toLocaleDateString('en-GB')}
               </span>
             </div>
           </div>
-
-          <div className="flex flex-col justify-between sm:flex-row">
-            <div className="w-full">
-              <h1 className="text-3xl my-8">Diameter</h1>
-              {diameter} meter
-            </div>
-            <div className="w-full sm:w-3/4">
-              <h1 className="text-3xl my-8">Height</h1>
-              {height} meter
-            </div>
-          </div>
+          <h1 className="text-4xl font-bold my-8 opacity-50">Description</h1>
+          <p className="text-base">{description}</p>
         </div>
 
         <div className="w-full xl:ml-20 xl:w-1/2">

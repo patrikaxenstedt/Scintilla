@@ -22,6 +22,8 @@ const RocketDetails = () => {
         firstFlight={rocket?.first_flight}
         diameter={rocket?.diameter?.meters}
         height={rocket?.height?.meters}
+        mass={rocket?.mass?.kg}
+        cost_per_launch={rocket?.cost_per_launch}
         imageUrl={rocket?.flickr_images[0]}
         isLoading={!rocket}
       />
