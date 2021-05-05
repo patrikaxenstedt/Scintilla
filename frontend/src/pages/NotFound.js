@@ -27,7 +27,6 @@ class NotFound extends Component {
                 Back
               </button>
             </Link>
-            {/*  <div className="flex flex-row w-full mt-0 justify-center text-center md:text-left md:w-2/5"></div> */}
           </div>
         </div>
         <Wave />
