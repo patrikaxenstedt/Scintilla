@@ -17,6 +17,7 @@ import Register from './components/auth/Register';
 import AdminPage from './pages/AdminPage';
 import NotFound from './pages/NotFound';
 import Rockets from './pages/Rockets';
+import RocketDetails from './pages/RocketDetails';
 import { RocketsContextProvider } from './contexts/RocketsContext';
 
 import Navbar from './components/Navbar/Nav';
@@ -52,6 +53,11 @@ class App extends Component {
                 <NotAuth exact path="/register" component={Register} />
                 <IsAuth exact path="/content" component={ContentPage} />
                 <IsAuth exact path="/rockets" component={Rockets} />
+                <IsAuth
+                  exact
+                  path="/rockets/:rocketId"
+                  component={RocketDetails}
+                />
                 <IsAdmin exact path="/admindashboard" component={AdminPage} />
                 <Route component={NotFound} />
               </Switch>
