@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import RocketsContext from '../contexts/RocketsContext';
 import Rocket from '../components/Rockets/Rocket';
 import Screen from '../components/UI/Screen';
-import Wave from '../components/UI/Wave';
 import Footer from '../components/Footer/Foot';
 
 const RocketDetails = () => {
@@ -13,7 +12,6 @@ const RocketDetails = () => {
 
   return (
     <Screen>
-      <Wave />
       <Rocket
         name={rocket?.rocket_name}
         active={rocket?.active}

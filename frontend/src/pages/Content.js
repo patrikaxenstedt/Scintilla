@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Wave from '../components/UI/Wave';
 import Hero from '../components/UI/Hero';
 import Welcome from '../components/Home/Welcome';
 import Screen from '../components/UI/Screen';
@@ -30,7 +29,6 @@ class ContentPage extends Component {
               <div className="flex flex-row w-full mt-0 justify-center text-center md:text-left md:w-2/5"></div>
             </div>
           </div>
-          <Wave />
           <Welcome />
           <Footer />
         </Screen>

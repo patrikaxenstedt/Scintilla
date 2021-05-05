@@ -1,9 +1,11 @@
 import Image from '../UI/Image';
+import HeroTwo from '../../components/UI/HeroTwo';
+import heroAnimation from '../../assets/lottie/rocket-main.json';
 
 const Welcome = () => {
   return (
-    <div className="bg-darkOne">
-      <div className="container mx-auto mb-20 bg-darkOne">
+    <div className="bg-darkOne ">
+      <div className="container mx-auto mb-20 bg-darkOne h-screen">
         <h1 className="w-full text-3xl text-white opacity-50 font-bold leading-tight text-center my-14">
           SpaceX was founded under the belief that a future where humanity is
           out exploring the stars is fundamentally more exciting than one where
@@ -26,14 +28,7 @@ const Welcome = () => {
             </p>
           </div>
 
-          <div className="flex flex-1 justify-center">
-            <Image
-              className="w-auto rounded-3xl mt-10 hidden sm:block"
-              src="moon-landing.png"
-              width="416px"
-              height="416px"
-            />
-          </div>
+          <HeroTwo image={heroAnimation} />
         </div>
       </div>
     </div>
