@@ -68,7 +68,24 @@ class Nav extends Component {
             </li>
           </ul>
         ) : (
-          <div className="hidden"></div>
+          <ul className="flex menu border-gray-500 border-b justify-end m-0 w-full md:border-none md:w-auto">
+            <li className="border-t border-gray-500 md:border-none">
+              <NavLink
+                to="/login"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
+                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+              >
+                Sign in
+              </NavLink>
+              <NavLink
+                to="/register"
+                className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
+                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+              >
+                Sign up
+              </NavLink>
+            </li>
+          </ul>
         )}
       </nav>
     );

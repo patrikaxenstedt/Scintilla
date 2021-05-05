@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import Hero from '../components/UI/Hero';
-import Wave from '../components/UI/Wave';
 import Title from '../components/UI/Title';
 import RocketList from '../components/Rockets/RocketList';
 import Screen from '../components/UI/Screen';
@@ -18,7 +17,7 @@ const Rockets = () => {
         subtitle="Below is a list of rockets"
         image={heroAnimation}
       />
-      <div className="bg-black flex justify-center">
+      <div className="bg-black flex justify-center -mt-20">
         <svg
           className="animate-bounce w-14 h-14"
           fill="#fff"
@@ -31,7 +30,6 @@ const Rockets = () => {
           <path d="M0-.75h24v24H0z" fill="none" />
         </svg>
       </div>
-      <Wave />
 
       <div className="bg-darkOne">
         <Title message="Rockets" />

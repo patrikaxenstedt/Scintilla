@@ -1,4 +1,6 @@
 import Image from '../UI/Image';
+import HeroTwo from '../../components/UI/HeroTwo';
+import heroAnimation from '../../assets/lottie/rocket-main.json';
 
 const Welcome = () => {
   return (
@@ -26,14 +28,7 @@ const Welcome = () => {
             </p>
           </div>
 
-          <div className="flex flex-1 justify-center">
-            <Image
-              className="w-auto rounded-3xl mt-10 hidden sm:block"
-              src="moon-landing.png"
-              width="416px"
-              height="416px"
-            />
-          </div>
+          <HeroTwo image={heroAnimation} />
         </div>
       </div>
     </div>
