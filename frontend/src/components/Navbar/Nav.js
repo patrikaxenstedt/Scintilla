@@ -16,7 +16,7 @@ class Nav extends Component {
     const { isAuthenticated } = this.props.auth;
 
     return (
-      <nav className="nav flex flex-wrap items-center justify-between px-4 bg-black text-white mt-0 fixed w-full z-10 top-0">
+      <nav className="nav flex flex-wrap items-center justify-between px-4 bg-white text-black dark:bg-black dark:text-white mt-0 fixed w-full z-10 top-0">
         <Link
           className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest"
           to="/"
@@ -28,9 +28,7 @@ class Nav extends Component {
             height="40px"
           />
 
-          <span className="font-semibold text-xl tracking-tight">
-            Scintilla
-          </span>
+          <span className="font-semibold text-xl">Scintilla</span>
         </Link>
 
         <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
@@ -38,7 +36,7 @@ class Nav extends Component {
           className="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
           htmlFor="menu-btn"
         >
-          <span className="icon bg-grey-darkest flex items-center relative"></span>
+          <span className="icon bg-black dark:bg-white flex items-center relative"></span>
         </label>
         {isAuthenticated ? (
           <ul className="flex menu border-gray-500 border-b justify-end m-0 w-full md:border-none md:w-auto">
