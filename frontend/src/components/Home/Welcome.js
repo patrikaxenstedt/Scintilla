@@ -1,4 +1,3 @@
-import Image from '../UI/Image';
 import HeroTwo from '../../components/UI/HeroTwo';
 import heroAnimation from '../../assets/lottie/rocket-main.json';
 

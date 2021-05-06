@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { loginUser } from '../../actions/authActions';
 import classnames from 'classnames';
 import LoginLottie from '../UI/LoginL';
-import heroAnimation from '../../assets/lottie/signin.json';
+import heroAnimation from '../../assets/lottie/test.json';
 
 class Login extends Component {
   state = {
@@ -47,7 +47,7 @@ class Login extends Component {
             <h1 className="text-5xl font-bold leading-tight text-center mt-14 text-white">
               Sign in here
             </h1>
-            <div className="absolute w-full bg-black top-0">
+            <div className="absolute w-full bg-black">
               <LoginLottie image={heroAnimation} />
             </div>
             <div className="container mx-auto px-4">
@@ -58,7 +58,7 @@ class Login extends Component {
                       <div className="text-center mb-3">
                         <form
                           onSubmit={this.onSubmitHandler}
-                          className="shadow-md rounded px-8 pt-6 pb-8 mb-4  bg-black bg-opacity-50"
+                          className="shadow-md rounded px-8 pt-6 pb-8 mb-4  bg-black bg-opacity-80"
                         >
                           <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2">
