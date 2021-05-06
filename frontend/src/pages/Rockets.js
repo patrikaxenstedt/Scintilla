@@ -3,7 +3,7 @@ import Hero from '../components/UI/Hero';
 import Title from '../components/UI/Title';
 import RocketList from '../components/Rockets/RocketList';
 import Screen from '../components/UI/Screen';
-import heroAnimation from '../assets/lottie/rockets.json';
+import heroAnimation from '../assets/lottie/statics.json';
 import RocketsContext from '../contexts/RocketsContext';
 import Footer from '../components/Footer/Foot';
 
@@ -14,7 +14,7 @@ const Rockets = () => {
     <Screen>
       <Hero
         title="Data about SpaceX rockets"
-        subtitle="Below is a list of rockets"
+        subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
         image={heroAnimation}
       />
       <div className="bg-black flex justify-center -mt-20">

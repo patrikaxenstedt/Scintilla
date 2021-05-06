@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Hero from '../components/UI/Hero';
 import Welcome from '../components/Home/Welcome';
 import Screen from '../components/UI/Screen';
-import heroAnimation from '../assets/lottie/rocket-launch.json';
+import heroAnimation from '../assets/lottie/rockets.json';
 
 import Footer from '../components/Footer/Foot';
 
