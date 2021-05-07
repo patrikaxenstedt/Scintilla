@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logoutUser } from '../../actions/authActions';
 import Image from '../UI/Image';
+import Toggle from '../Themes/themeToggle';
 import './Nav.css';
 
 class Nav extends Component {
@@ -40,25 +41,26 @@ class Nav extends Component {
         </label>
         {isAuthenticated ? (
           <ul className="flex menu border-gray-500 border-b justify-end m-0 w-full md:border-none md:w-auto">
+            <Toggle />
             <li className="border-t border-gray-500 md:border-none">
               <NavLink
                 to="/content"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Contentpage
               </NavLink>
               <NavLink
                 to="/rockets"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Rockets
               </NavLink>
               <NavLink
                 to="/logout"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
                 onClick={this.onLogout.bind(this)}
               >
                 Sign out
@@ -67,18 +69,19 @@ class Nav extends Component {
           </ul>
         ) : (
           <ul className="flex menu border-gray-500 border-b justify-end m-0 w-full md:border-none md:w-auto">
+            <Toggle />
             <li className="border-t border-gray-500 md:border-none">
               <NavLink
                 to="/login"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Sign in
               </NavLink>
               <NavLink
                 to="/register"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Sign up
               </NavLink>
