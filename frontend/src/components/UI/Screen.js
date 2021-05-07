@@ -1,7 +1,7 @@
 const Screen = (props) => {
   return (
     <div
-      className="flex flex-col h-auto justify-between bg-black"
+      className="flex flex-col h-auto justify-between bg-white dark:bg-black"
       style={{
         marginBottom: '0px',
       }}

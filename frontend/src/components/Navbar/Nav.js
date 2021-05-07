@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logoutUser } from '../../actions/authActions';
 import Image from '../UI/Image';
+import Toggle from '../Themes/themeToggle';
 import './Nav.css';
 
 class Nav extends Component {
@@ -16,7 +17,7 @@ class Nav extends Component {
     const { isAuthenticated } = this.props.auth;
 
     return (
-      <nav className="nav flex flex-wrap items-center justify-between px-4 bg-black text-white mt-0 fixed w-full z-10 top-0">
+      <nav className="nav flex flex-wrap items-center justify-between px-4 bg-white text-black dark:bg-black dark:text-white mt-0 fixed w-full z-10 top-0">
         <Link
           className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest"
           to="/"
@@ -28,9 +29,7 @@ class Nav extends Component {
             height="40px"
           />
 
-          <span className="font-semibold text-xl tracking-tight">
-            Scintilla
-          </span>
+          <span className="font-semibold text-xl">Scintilla</span>
         </Link>
 
         <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
@@ -38,29 +37,30 @@ class Nav extends Component {
           className="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
           htmlFor="menu-btn"
         >
-          <span className="icon bg-grey-darkest flex items-center relative"></span>
+          <span className="icon bg-black dark:bg-white flex items-center relative"></span>
         </label>
         {isAuthenticated ? (
           <ul className="flex menu border-gray-500 border-b justify-end m-0 w-full md:border-none md:w-auto">
+            <Toggle />
             <li className="border-t border-gray-500 md:border-none">
               <NavLink
                 to="/content"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Contentpage
               </NavLink>
               <NavLink
                 to="/rockets"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Rockets
               </NavLink>
               <NavLink
                 to="/logout"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
                 onClick={this.onLogout.bind(this)}
               >
                 Sign out
@@ -69,18 +69,19 @@ class Nav extends Component {
           </ul>
         ) : (
           <ul className="flex menu border-gray-500 border-b justify-end m-0 w-full md:border-none md:w-auto">
+            <Toggle />
             <li className="border-t border-gray-500 md:border-none">
               <NavLink
                 to="/login"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Sign in
               </NavLink>
               <NavLink
                 to="/register"
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
-                activeClassName="font-bold md:border md:border-white md:rounded-full md:bg-white md:text-black"
+                activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
                 Sign up
               </NavLink>

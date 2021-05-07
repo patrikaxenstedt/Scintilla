@@ -17,10 +17,10 @@ const Rockets = () => {
         subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
         image={heroAnimation}
       />
-      <div className="bg-black flex justify-center -mt-20">
+      <div className="bg-white dark:bg-black flex justify-center -mt-20">
         <svg
           className="animate-bounce w-14 h-14"
-          fill="#fff"
+          fill="#8739F9"
           height="75"
           viewBox="0 0 24 24"
           width="75"
@@ -31,7 +31,7 @@ const Rockets = () => {
         </svg>
       </div>
 
-      <div className="bg-darkOne">
+      <div className="bg-white dark:bg-darkOne">
         <Title message="Rockets" />
       </div>
       <RocketList rockets={rockets} />

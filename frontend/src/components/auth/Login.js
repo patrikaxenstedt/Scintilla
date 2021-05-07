@@ -43,8 +43,8 @@ class Login extends Component {
     return (
       <>
         <main>
-          <section className="absolute w-full h-full bg-black pt-40">
-            <h1 className="text-5xl font-bold leading-tight text-center mt-14 text-white">
+          <section className="absolute w-full h-full bg-white dark:bg-black pt-40">
+            <h1 className="text-5xl font-bold leading-tight text-center mt-14 text-black dark:text-white">
               Sign in here
             </h1>
             <div className="absolute w-full bg-black">
@@ -58,7 +58,7 @@ class Login extends Component {
                       <div className="text-center mb-3">
                         <form
                           onSubmit={this.onSubmitHandler}
-                          className="shadow-md rounded px-8 pt-6 pb-8 mb-4  bg-black bg-opacity-80"
+                          className="shadow-md rounded px-8 pt-6 pb-8 mb-4  bg-white dark:bg-black bg-opacity-80"
                         >
                           <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2">
