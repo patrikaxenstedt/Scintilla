@@ -24,7 +24,7 @@ const Rocket = ({
   }
 
   return (
-    <div className="container mx-auto mt-20 text-white h-screen">
+    <div className="container mx-auto mt-20 bg-white dark:bg-black text-black dark:text-white h-screen">
       <h1 className="flex justify-center w-full text-5xl font-bold leading-tight items-center my-14">
         {name}
         <span className="relative rounded-md shadow-sm ml-8 hidden xl:inline-flex">
