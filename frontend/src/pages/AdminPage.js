@@ -53,17 +53,17 @@ class Users extends Component {
                       className={`opacity-75 bg-gradient-to-t from-green-400 to-blue-500 flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:opacity-100 overflow-auto mb-24`}
                       style={{
                         height: '180px',
-                        width: '380px',
+                        width: '320px',
                       }}
                     >
-                      <Link>
+                      <Link to={'users/' + user._id}>
                         <div className="p-5">
                           <div className="flex items-center justify-between text-white">
-                            <div className="font-bold text-lg" width="200">
-                              {user._id.toString()}
-                            </div>
-                            <div className="font-bold text-lg" width="200">
+                            <div className="font-bold text-3xl" width="200">
                               {user.name}
+                            </div>
+                            <div className="font-bold text-lg" width="180">
+                              {user.role}
                             </div>
                           </div>
 
@@ -73,14 +73,6 @@ class Users extends Component {
                             </span>
                           </div>
 
-                          <div className="flex flex-1 mt-3">
-                            <div
-                              className="text-white text-opacity-75"
-                              width="250"
-                            >
-                              {user.role}
-                            </div>
-                          </div>
                           <div className="flex flex-1 mt-3">
                             <div
                               className="text-white text-opacity-75"
