@@ -3,6 +3,8 @@ import axios from 'axios';
 import Screen from '../components/UI/Screen';
 import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router';
+import LoginLottie from '../components/UI/LoginL';
+import heroAnimation from '../assets/lottie/test.json';
 
 class User extends Component {
   constructor(props) {
@@ -33,59 +35,70 @@ class User extends Component {
   render() {
     return (
       <Screen>
-        <div className="my-auto mx-auto grid grid-cols-1 justify-items-center lg:grid-cols-2 xl:grid-cols-4 bg-white dark:bg-darkOne w-full">
-          <div
-            className={`bg-gradient-to-t from-green-400 to-blue-500 flex flex-col shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000 overflow-auto mb-24`}
-            style={{
-              height: '240px',
-              width: '320px',
-            }}
-          >
-            {/* <Link to={'users/' + user._id}> */}
-            <div className="p-5">
-              <div className="flex items-center justify-between text-white">
-                <div className="font-bold text-3xl" width="200">
-                  {this.state.user.name}
-                </div>
-                <div className="font-bold text-lg" width="180">
-                  {this.state.user.role}
-                </div>
-              </div>
-
-              <div className="flex flex-1">
-                <span className="text-white text-opacity-50">
-                  {this.state.user.email}
-                </span>
-              </div>
-
-              <div className="flex flex-1 mt-3">
-                <div className="text-white text-opacity-75" width="250">
-                  {this.state.user.date}
-                </div>
-              </div>
-              <Link to={this.state.user._id + '/edit'}>
-                <button className="bg-mainTwo hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full m-1.5 ">
-                  Edit user
-                </button>
-              </Link>
-              <form onSubmit={this.deleteUser}>
-                <button
-                  type="submit"
-                  className="bg-red-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full m-1.5 "
-                >
-                  Delete
-                </button>
-                <Link to={'/admindashboard'}>
-                  <button className="bg-mainOne hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full m-1.5 ">
-                    Back
-                  </button>
-                </Link>
-              </form>
-            </div>
-            {this.state.redirect && <Redirect to={'/users'} />}
+        <section className="absolute w-full h-full bg-white dark:bg-black pt-40">
+          <h1 className="text-5xl font-bold leading-tight text-center mt-14 text-black dark:text-white">
+            About this user
+          </h1>
+          <div className="absolute w-full bg-black">
+            <LoginLottie image={heroAnimation} />
           </div>
-          );
-        </div>
+          <div className="container mx-auto px-4">
+            <div className="flex justify-center">
+              <div className="w-full lg:w-6/12 px-4">
+                <div className="relative flex flex-col min-w-0 break-words w-full mb-6">
+                  <div className="rounded-t mb-0 px-6 py-6">
+                    <div className="text-center mb-3">
+                      <form className="shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-80">
+                        <div className="p-5">
+                          <div className="flex items-center justify-between text-black dark:text-white">
+                            <div className="font-bold text-3xl">
+                              Name: {this.state.user.name}
+                            </div>
+                            <div className="font-bold text-lg">
+                              Role: {this.state.user.role}
+                            </div>
+                          </div>
+                          <div className="flex flex-1">
+                            <span className="text-black dark:text-white text-opacity-50">
+                              Email: {this.state.user.email}
+                            </span>
+                          </div>
+                          <div className="flex flex-1 mt-3">
+                            <div className="text-black dark:text-white text-opacity-75 mb-8">
+                              Created at: {this.state.user.date}
+                            </div>
+                          </div>
+
+                          <form onSubmit={this.deleteUser}>
+                            <button
+                              type="submit"
+                              className="bg-red-400 hover:bg-red-700 text-white font-bold py-2 px-8 rounded-full m-1.5 "
+                            >
+                              Delete
+                            </button>
+                            <Link to={this.state.user._id + '/edit'}>
+                              <button className="bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full m-1.5 ">
+                                Edit user
+                              </button>
+                            </Link>
+                            <Link to={'/admindashboard'}>
+                              <button className="bg-mainOne hover:bg-black text-white font-bold py-2 px-8 rounded-full m-1.5 ">
+                                Back
+                              </button>
+                            </Link>
+                          </form>
+                        </div>
+                        {this.state.redirect && (
+                          <Redirect to={'/admindashboard'} />
+                        )}
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </Screen>
     );
   }

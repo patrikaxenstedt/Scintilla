@@ -172,13 +172,4 @@ router.post("/login", (req, res, next) => {
   }
 });
 
-// test if the backend is secured
-// router.get(
-//   "/test",
-//   passport.authenticate("jwt", { session: false }),
-//   (req, res) => {
-//     res.json({ message: "you are authorized" });
-//   }
-// );
-
 module.exports = router;

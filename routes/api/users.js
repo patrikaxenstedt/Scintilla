@@ -31,47 +31,39 @@ router.get(
 );
 
 // GET | api/users
-// view users list if Admin
-router.get(
-  "/",
-  //[passport.authenticate('jwt', { session: false }), isAdmin],
-  (req, res) => {
-    User.find({})
-      .then((users) => {
-        if (users) {
-          res.json({ success: true, users });
-        } else {
-          res.json({ success: false, message: "Users not found" });
-        }
-      })
-      .catch((ex) => {
-        return res.status(500).send("Something went wrong");
-      });
-  }
-);
+// View users list if Admin
+router.get("/", (req, res) => {
+  User.find({})
+    .then((users) => {
+      if (users) {
+        res.json({ success: true, users });
+      } else {
+        res.json({ success: false, message: "Users not found" });
+      }
+    })
+    .catch((ex) => {
+      return res.status(500).send("Something went wrong");
+    });
+});
 
 // GET | api/users/show/:id
-// get user
-router.get(
-  "/show/:id",
-  //[passport.authenticate('jwt', { session: false }), isAdmin],
-  (req, res) => {
-    User.findOne({ _id: req.params.id })
-      .then((user) => {
-        if (user) {
-          res.json({ success: true, user });
-        } else {
-          res.json({ success: false, message: "User not found" });
-        }
-      })
-      .catch((ex) => {
-        return res.status(500).send("Something went wrong");
-      });
-  }
-);
+// GET user
+router.get("/show/:id", (req, res) => {
+  User.findOne({ _id: req.params.id })
+    .then((user) => {
+      if (user) {
+        res.json({ success: true, user });
+      } else {
+        res.json({ success: false, message: "User not found" });
+      }
+    })
+    .catch((ex) => {
+      return res.status(500).send("Something went wrong");
+    });
+});
 
 // PUT | api/users/update
-// UPDATE user NEW
+// UPDATE user
 router.post("/update/:id", function (req, res) {
   User.findById(req.params.id, function (err, user) {
     if (!user) res.status(404).send("Data is not found");
