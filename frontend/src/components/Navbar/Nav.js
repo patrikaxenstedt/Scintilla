@@ -48,7 +48,7 @@ class Nav extends Component {
                 className="block px-4 py-2 no-underline text-grey-darkest hover:text-grey-darker md:inline-block ham-hover"
                 activeClassName="font-bold md:border md:border-black md:rounded-full md:bg-black md:text-white dark:bg-white dark:text-black dark:border-white"
               >
-                Contentpage
+                Home
               </NavLink>
               <NavLink
                 to="/rockets"

@@ -28,7 +28,7 @@ class Users extends Component {
       <Screen>
         <Hero
           title="Admin dashboard"
-          subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+          subtitle="Add a user, update a user or delete a user.  "
           image={heroAnimation}
         />
         <div className="bg-white dark:bg-black flex justify-center -mt-20">

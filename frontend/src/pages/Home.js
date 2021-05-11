@@ -20,7 +20,7 @@ class Home extends Component {
         <Screen>
           <Hero
             title={'Welcome to Scintilla'}
-            subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+            subtitle="Sign in or create an account to explore SpaceX's rockets. Get detailed information about rockets like Falcon 9 and Starship. We're using SpaceX API v3."
             image={heroAnimation}
           />
 
@@ -46,7 +46,7 @@ class Home extends Component {
         <Screen>
           <Hero
             title={'Welcome to Scintilla'}
-            subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+            subtitle="Sign in or create an account to explore SpaceX's rockets. Get detailed information about rockets like Falcon 9 and Starship. We're using SpaceX API v3."
             image={heroAnimation}
           />
           <div className="bg-white dark:bg-black flex justify-center -mt-20">

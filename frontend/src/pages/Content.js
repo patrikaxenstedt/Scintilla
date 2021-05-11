@@ -19,8 +19,8 @@ class ContentPage extends Component {
         <Screen>
           <Hero
             user={user.name}
-            title={'Welcome,'}
-            subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+            title={'Welcome, '}
+            subtitle="You have logged in successfully, let's explore."
             image={heroAnimation}
           />
           <div className="w-full bg-white dark:bg-black text-black dark:text-white">

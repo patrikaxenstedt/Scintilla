@@ -13,8 +13,8 @@ const Rockets = () => {
   return (
     <Screen>
       <Hero
-        title="Data about SpaceX rockets"
-        subtitle="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+        title="Explore SpaceX rockets here"
+        subtitle="Down below you'll see a selection of rockets. Go on astronaut, gather information."
         image={heroAnimation}
       />
       <div className="bg-white dark:bg-black flex justify-center -mt-20">
