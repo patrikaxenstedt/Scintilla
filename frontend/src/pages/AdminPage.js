@@ -87,6 +87,13 @@ class Users extends Component {
                   );
                 })
               : null}
+          </div>{' '}
+          <div className="flex justify-center bg-white dark:bg-darkOne pb-8">
+            <Link to="/add">
+              <button className="bg-purple-700 hover:bg-purple-400 text-white dark:text-white font-bold py-2 px-6 rounded-full m-1.5 ">
+                Add a user
+              </button>
+            </Link>
           </div>
         </div>
       </Screen>

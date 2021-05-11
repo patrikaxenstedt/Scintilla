@@ -16,6 +16,8 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import AdminPage from './pages/AdminPage';
 import User from './pages/User';
+import EditUser from './pages/EditUser';
+import AddUser from './pages/AddUser';
 import NotFound from './pages/NotFound';
 import Rockets from './pages/Rockets';
 import RocketDetails from './pages/RocketDetails';
@@ -60,7 +62,9 @@ class App extends Component {
                   component={RocketDetails}
                 />
                 <IsAdmin exact path="/admindashboard" component={AdminPage} />
+                <IsAdmin exact path="/add" component={AddUser} />
                 <IsAdmin exact path="/users/:id" component={User} />
+                <IsAdmin exact path="/users/:id/edit" component={EditUser} />
                 <Route component={NotFound} />
               </Switch>
             </div>
