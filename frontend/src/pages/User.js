@@ -86,48 +86,6 @@ class User extends Component {
           </div>
           );
         </div>
-
-        {/*  <div>
-          <div>
-            <b>Details about:</b> {this.state.user.name}
-          </div>
-          <div>
-            <div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <b>Details about:</b> {this.state.user.name}
-                <p>
-                  <b>Name</b> : {this.state.user.name}
-                </p>
-                <p>
-                  <b>Email</b> : {this.state.user.email}
-                </p>
-                <p>
-                  <b>Role</b> : {this.state.user.role}
-                </p>
-                <p>
-                  <b>ID</b> : {this.state.user._id}
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <Link to={this.state.user._id + '/edit'}>
-                <button>Edit user</button>
-              </Link>
-              <form onSubmit={this.deleteUser}>
-                <button type="submit">Delete</button>
-                <Link to={'/admindashboard'}>
-                  <button>Back</button>
-                </Link>
-              </form>
-            </div>
-
-            {this.state.redirect && <Redirect to={'/users'} />}
-          </div>
-        </div> */}
       </Screen>
     );
   }
