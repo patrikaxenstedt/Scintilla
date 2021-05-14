@@ -152,7 +152,7 @@ class AddUser extends Component {
                               this.state.password2
                             )
                           }
-                          className="bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full m-1.5 "
+                          className="bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full m-1.5 mt-8"
                         >
                           Confirm
                         </button>

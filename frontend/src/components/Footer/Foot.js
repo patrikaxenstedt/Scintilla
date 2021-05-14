@@ -12,7 +12,7 @@ class Foot extends Component {
             target="_blank"
             rel="noreferrer"
           >
-            SpaceX REST API
+            SpaceX API v3
           </a>
         </h1>
       </footer>

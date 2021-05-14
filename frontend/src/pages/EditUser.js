@@ -146,62 +146,6 @@ class EditUser extends Component {
             </div>
           </div>
         </section>
-        {/*   <div className="my-auto mx-auto grid grid-cols-1 justify-items-center text-black dark:text-white w-full mt-20">
-          <form
-            onSubmit={this.updateUser}
-            method="user"
-            className="shadow-md rounded px-8 pt-6 pb-8 mb-4  bg-white dark:bg-black bg-opacity-80"
-          >
-            <div>
-              <label>Name</label>
-              <div>
-                <input
-                  type="text"
-                  onChange={this.handleNameChange}
-                  name="name"
-                  value={this.state.name}
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                />
-              </div>
-            </div>
-            <div>
-              <label>Email</label>
-              <div>
-                <input
-                  type="text"
-                  onChange={this.handleEmailChange}
-                  name="email"
-                  value={this.state.email}
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                />
-              </div>
-            </div>
-            <div>
-              <label>Role</label>
-              <div>
-                <input
-                  type="text"
-                  onChange={this.handleRoleChange}
-                  name="role"
-                  value={this.state.role}
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                />
-              </div>
-            </div>
-
-            <div>
-              <button
-                type="submit"
-                className="bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full m-1.5 "
-              >
-                Update user
-              </button>
-            </div>
-          </form>
-
-          <Link to="/admindashboard">Cancel</Link>
-          {this.state.redirect && <Redirect to={'/admindashboard'} />}
-        </div> */}
       </Screen>
     );
   }
