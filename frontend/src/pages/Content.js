@@ -23,12 +23,6 @@ class ContentPage extends Component {
             subtitle="You have logged in successfully, let's explore."
             image={heroAnimation}
           />
-          <div className="w-full bg-white dark:bg-black text-black dark:text-white">
-            <div className="container flex flex-wrap flex-col px-5 mx-auto md:flex-row">
-              Keep this text and placement or delete?
-              <div className="flex flex-row w-full mt-0 justify-center text-center md:text-left md:w-2/5"></div>
-            </div>
-          </div>
           <Welcome />
           <Footer />
         </Screen>
