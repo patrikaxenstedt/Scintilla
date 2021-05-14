@@ -30,12 +30,12 @@ const Rocket = ({
         <span className="relative rounded-md shadow-sm ml-8 hidden xl:inline-flex">
           <span
             className={`animate-ping absolute inline-flex h-full w-full rounded-full ${
-              active ? 'bg-mainTwo' : 'bg-mainOne'
+              active ? 'bg-green-400' : 'bg-mainOne'
             } opacity-75`}
           />
           <span
             className={`relative inline-flex rounded-full h-6 w-6 ${
-              active ? 'bg-mainTwo' : 'bbg-mainOne'
+              active ? 'bg-green-400' : 'bg-mainOne'
             }`}
           />
         </span>

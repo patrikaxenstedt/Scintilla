@@ -41,13 +41,13 @@ const Card = ({
             <div className="relative inline-flex rounded-md shadow-sm ">
               <span
                 className={`animate-ping absolute inline-flex h-full w-full rounded-full ${
-                  active ? 'bg-mainTwo' : 'bg-mainOne'
+                  active ? 'bg-green-400' : 'bg-mainOne'
                 } opacity-75`}
               />
 
               <span
                 className={`relative inline-flex rounded-full h-3 w-3 ${
-                  active ? 'bg-mainTwo' : 'bg-mainOne'
+                  active ? 'bg-green-400' : 'bg-mainOne'
                 }`}
               />
             </div>
