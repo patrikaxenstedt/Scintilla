@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Screen from '../components/UI/Screen';
 import Hero from '../components/UI/Hero';
-import heroAnimation from '../assets/lottie/dashboard.json';
+import heroAnimation from '../assets/lottie/rocket-main.json';
 
 import { Link } from 'react-router-dom';
 
