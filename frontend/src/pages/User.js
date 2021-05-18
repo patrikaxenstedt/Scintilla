@@ -48,7 +48,7 @@ class User extends Component {
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6">
                   <div className="rounded-t mb-0 px-6 py-6">
                     <div className="text-center mb-3">
-                      <form className="shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-80">
+                      <div className="shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-80">
                         <div className="p-5">
                           <div className="flex items-center justify-between text-black dark:text-white">
                             <div className="font-bold text-3xl">
@@ -91,7 +91,7 @@ class User extends Component {
                         {this.state.redirect && (
                           <Redirect to={'/admindashboard'} />
                         )}
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
