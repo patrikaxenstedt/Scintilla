@@ -157,7 +157,7 @@ class AddUser extends Component {
                           Confirm
                         </button>
                         <Link to="/admindashboard">
-                          <button className="bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full m-1.5 ">
+                          <button className="bg-mainOne hover:bg-black text-white font-bold py-2 px-8 rounded-full m-1.5 ">
                             Back
                           </button>
                           {this.state.redirect && (

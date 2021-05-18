@@ -50,6 +50,7 @@ class Users extends Component {
               ? data.map((user, i) => {
                   return (
                     <div
+                      key={user._id.toString()}
                       className={`opacity-75 bg-gradient-to-t from-green-400 to-blue-500 flex flex-col cursor-pointer shadow-lg rounded-md w-80 mx-16 mt-16 transition duration-2000  hover:opacity-100 overflow-auto mb-24`}
                       style={{
                         height: '180px',
