@@ -5,6 +5,8 @@ import Rocket from '../components/Rockets/Rocket';
 import Screen from '../components/UI/Screen';
 import Footer from '../components/Footer/Foot';
 
+// Creates Rocket with all data we want to fetch and display
+// If more data is wanted, one must add this in here
 const RocketDetails = () => {
   const { rocketId } = useParams();
   const { getRocket } = useContext(RocketsContext);

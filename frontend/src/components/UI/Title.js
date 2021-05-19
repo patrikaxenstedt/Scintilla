@@ -1,3 +1,4 @@
+// Title that takes a message prop, styling is done here. Currently set to h1-tag.
 const Title = ({ message }) => {
   return (
     <div className="container mx-auto my-auto bg-white dark:bg-darkOne">

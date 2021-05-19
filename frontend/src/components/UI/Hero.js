@@ -1,5 +1,6 @@
 import Lottie from 'lottie-react';
 
+// Hero UI component, here we style how the looks of the title or the users name will be presented. Also the Lotti-animation.
 const Hero = ({ title, subtitle, image, user }) => {
   return (
     <div className="w-full h-screen bg-white dark:bg-black text-black dark:text-white mt-8">

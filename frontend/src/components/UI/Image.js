@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+// Image, styling is done here and checks if image has a src, if not display the image no-image.webp.
 const Image = ({ className, src, width, height }) => {
   const [showErrorImage, setShowErrorImage] = useState(false);
 

@@ -26,7 +26,7 @@ require("./config/passport")(passport);
 // Connect to MongoDB
 require("dotenv").config();
 
-// Connect to MongoDB
+// Connect to MongoDB, using dotenv to protect sensitive data about mongodb information
 mongoose.connect(
   `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@rest.4cske.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
   {

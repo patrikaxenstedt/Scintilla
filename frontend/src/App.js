@@ -41,7 +41,7 @@ if (localStorage.jwtToken) {
     store.dispatch(logoutUser());
   }
 }
-
+// All routes down here. Some of them requires that your role is admin.
 class App extends Component {
   render() {
     return (

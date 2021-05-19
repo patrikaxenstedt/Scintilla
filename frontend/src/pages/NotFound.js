@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Wave from '../components/UI/Wave';
 import { Link } from 'react-router-dom';
 import Screen from '../components/UI/Screen';
 import Hero from '../components/UI/Hero';
 import Footer from '../components/Footer/Foot';
 import heroAnimation from '../assets/lottie/404.json';
 
+// This is the page that shows up when you travel to a endpoint that does not exist. For example if you go to /thispageisnothere
+// then this page will shown with a message and a lottie-animation.
 class NotFound extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -28,7 +29,6 @@ class NotFound extends Component {
             </Link>
           </div>
         </div>
-        <Wave />
         <Footer />
       </Screen>
     );

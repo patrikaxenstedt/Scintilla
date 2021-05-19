@@ -1,5 +1,8 @@
 const colors = require('tailwindcss/colors');
 
+// My Tailwind config.
+// I´ve created my own theme colors and named whem
+// This makes it easy to get the colors when styling with Tailwindcss.
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: 'class', // false or 'media'

@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import LoginLottie from '../components/UI/LoginL';
 import heroAnimation from '../assets/lottie/signin.json';
 
+// Here we edit the user, handleNameChange ect is used
+// Using Axios to get the user + ID so we can edit this specific user
+// Admin can also change the users role here, from member to admin if wanted.
 class EditUser extends Component {
   constructor(props) {
     super(props);

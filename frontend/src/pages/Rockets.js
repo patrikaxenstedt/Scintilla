@@ -7,6 +7,7 @@ import heroAnimation from '../assets/lottie/statics.json';
 import RocketsContext from '../contexts/RocketsContext';
 import Footer from '../components/Footer/Foot';
 
+// Rocketspage with Hero and other components, uses RocketList to get all rockets avaible.
 const Rockets = () => {
   const { rockets } = useContext(RocketsContext);
 

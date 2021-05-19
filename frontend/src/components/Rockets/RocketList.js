@@ -2,6 +2,8 @@ import React from 'react';
 
 import Card from '../UI/Card';
 
+// RocketList is where we get all the rockets and display them in a styled Card.
+
 const RocketList = ({ rockets }) => {
   return (
     <div className="my-auto mx-auto grid grid-cols-1 justify-items-center lg:grid-cols-2 xl:grid-cols-4 bg-white dark:bg-darkOne w-full">

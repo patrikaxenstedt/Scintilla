@@ -1,5 +1,6 @@
 import React from 'react';
 
+// ThemeProvider is wrapped around <App/> in index.js to make it work for the hole app.
 const getInitialTheme = () => {
   if (typeof window !== 'undefined' && window.localStorage) {
     const storedPrefs = window.localStorage.getItem('color-theme');
@@ -12,6 +13,7 @@ const getInitialTheme = () => {
       return 'dark';
     }
   }
+  // Here we set the default theme
   return 'dark';
 };
 

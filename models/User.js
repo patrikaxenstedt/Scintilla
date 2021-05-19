@@ -10,7 +10,8 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  // Roles avaible: member, admin
+  // Roles avaible: member, admin. When creating an account the role is set to member be default.
+  // Admin can later change this role on /admindashboard
   role: {
     type: String,
     default: "member",

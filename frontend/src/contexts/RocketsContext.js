@@ -2,6 +2,10 @@ import { createContext, useState, useEffect } from 'react';
 
 const RocketsContext = createContext();
 
+// Base URL where we get the data from the API, currently v3.
+// useEffect to get the data and turn the respons into .json.
+// Cathces error and console.logs and error message.
+// RocketsContextProvider is then wrapped around everything in App.js.
 const URL = 'https://api.spacexdata.com/v3/rockets';
 
 export const RocketsContextProvider = (props) => {
