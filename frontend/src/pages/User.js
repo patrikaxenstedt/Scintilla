@@ -6,6 +6,8 @@ import { Redirect } from 'react-router';
 import LoginLottie from '../components/UI/LoginL';
 import heroAnimation from '../assets/lottie/test.json';
 
+// Page for a specific user, displays info such as name, role, email and date when created.
+// Function to delete the user via Axios /api/users/delete/ - and the id for this user
 class User extends Component {
   constructor(props) {
     super(props);

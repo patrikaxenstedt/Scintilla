@@ -9,6 +9,9 @@ import classnames from 'classnames';
 import LoginLottie from '../components/UI/LoginL';
 import heroAnimation from '../assets/lottie/signin.json';
 
+// Here we create a new user based on the parameters such as name, email and password.
+// Password2 checks if password and password2 is a match.
+// Catches errors for email and passwords and displays a message accordingly.
 class AddUser extends Component {
   state = {
     name: '',

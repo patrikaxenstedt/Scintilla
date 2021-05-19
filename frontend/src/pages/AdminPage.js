@@ -3,9 +3,12 @@ import axios from 'axios';
 import Screen from '../components/UI/Screen';
 import Hero from '../components/UI/Hero';
 import heroAnimation from '../assets/lottie/rocket-main.json';
-
 import { Link } from 'react-router-dom';
 
+// This page is protected, only admin is able to visit this page.
+// Using Axios to fetch /api/users and displays them
+// Mapping over all users and gives each user a specific key
+// Creating a link to each user + thier ID, to reach one and each of them.
 class Users extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +19,7 @@ class Users extends Component {
 
   componentDidMount() {
     axios.get('/api/users').then((res) => {
-      //console.log(res);
+      //console.log(res); testing response
       this.setState({ users: res.data.users });
     });
   }
