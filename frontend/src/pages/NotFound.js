@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Wave from '../components/UI/Wave';
 import { Link } from 'react-router-dom';
 import Screen from '../components/UI/Screen';
 import Hero from '../components/UI/Hero';
@@ -28,7 +27,6 @@ class NotFound extends Component {
             </Link>
           </div>
         </div>
-        <Wave />
         <Footer />
       </Screen>
     );

@@ -1,3 +1,4 @@
+// The main div that holds everything else.
 const Screen = (props) => {
   return (
     <div

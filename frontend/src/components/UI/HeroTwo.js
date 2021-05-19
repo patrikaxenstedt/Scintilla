@@ -1,5 +1,6 @@
 import Lottie from 'lottie-react';
 
+// HeroTwo is used for the lower part, when scrolling down.
 const HeroTwo = ({ image }) => {
   return (
     <div className="w-full  bg-transparent text-white mt-8">

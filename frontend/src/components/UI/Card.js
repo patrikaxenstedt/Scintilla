@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 import Image from './Image';
 
+// Styled Card that is used when displaying all rockets, each rockets gets its own card with information inside.
 const Card = ({
   title,
   active,

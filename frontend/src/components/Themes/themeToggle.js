@@ -2,6 +2,7 @@ import React from 'react';
 import { HiMoon, HiSun } from 'react-icons/hi';
 import { ThemeContext } from './themeContext';
 
+// Toggle function with sun and moon icon that changes when clicked and sets the theme.
 const Toggle = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
