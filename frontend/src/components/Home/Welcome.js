@@ -1,6 +1,7 @@
 import HeroTwo from '../../components/UI/HeroTwo';
 import heroAnimation from '../../assets/lottie/rocket-main.json';
 
+// Welcome component is created here and then imported where its needed. Styling for Welcome is done here.
 const Welcome = () => {
   return (
     <div className="bg-white dark:bg-darkOne">

@@ -3,6 +3,7 @@ import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+// Checks if user is authenticated and then checks the role if its admin. If correnct, redirect to /content otherwise to /login
 const IsAdmin = ({ component: Component, auth, ...rest }) => (
   <Route
     {...rest}

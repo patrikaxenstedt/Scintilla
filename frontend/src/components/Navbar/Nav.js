@@ -13,6 +13,9 @@ class Nav extends Component {
     this.props.logoutUser();
   }
 
+  // If the user is authenticated return a navbar with links to other pages etc. Else, return links to Sign in | Sign up.
+  // Logout functionallity is also imported to navbar since logout button is shown here.
+  // Toggle function for darkmode/lightmode is imported to the navbar so the user always can switch between those two.
   render() {
     const { isAuthenticated } = this.props.auth;
 

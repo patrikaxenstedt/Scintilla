@@ -2,6 +2,10 @@ import CountUp from 'react-countup';
 import Image from '../UI/Image';
 import Loader from '../UI/Loader';
 
+// Here we display all information about one specific rocket.
+// React-countup is used to create a animation for specific details such as diameter and mass.
+// All styling is done here, such as Tailwindcss's animate-ping if the rockets status is active or not.
+
 const Rocket = ({
   name,
   active,
