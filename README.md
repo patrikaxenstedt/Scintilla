@@ -4,5 +4,5 @@
 ### cd frontend
 ### npm install
 
-### To start backend -npm start in Scintill
-### To start frontend -npm start in frontend
+### To start backend: npm start in Scintill
+### To start frontend: npm start in frontend
