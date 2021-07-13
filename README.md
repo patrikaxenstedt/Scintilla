@@ -1,5 +1,5 @@
 ## clone the repo
-### cd Scintilla
+## cd Scintilla
 ### npm install
 ### cd frontend
 ### npm install
