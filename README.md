@@ -1,4 +1,4 @@
-Get started
+Get started:
 - clone the repo
 - cd Scintilla
 - npm install
