@@ -1,4 +1,4 @@
- Get started
+ To test this project on your local machine:
 - clone the repo
 - cd Scintilla
 - npm install
