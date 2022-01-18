@@ -1,4 +1,4 @@
- To run this project on your local machine -
+ To run this project on your local machine:
 - clone the repo
 - cd Scintilla
 - npm install
